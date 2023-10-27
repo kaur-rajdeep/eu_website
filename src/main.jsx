@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 
 import './index.css'
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <Contact/>
+    <Contact />
   </React.StrictMode>
-)
+);
