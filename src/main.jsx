@@ -8,6 +8,7 @@ import { Acet } from './pages/Acet'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <Acet/>
     <App />
   </React.StrictMode>
 );
