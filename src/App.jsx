@@ -1,12 +1,33 @@
 import './App.css'
+import React from "react";
+import { Acet } from "./pages/Acet";
+import "./index.css";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Student from "./pages/Student";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Faculty from "./pages/Faculty";
 
 function App() {
-
   return (
-    <div className="bg-red-200">
-      <h1>Welcome! This is yet in building.</h1>
-    </div>
-  )
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/acet" element={<Acet />} />
+          <Route path="/student" element={<Student />} />
+          <Route path="/faculty" element={<Faculty />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
+  );
 }
 
 export default App
