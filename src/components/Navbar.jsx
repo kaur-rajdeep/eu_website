@@ -6,7 +6,7 @@ export default function Navbar() {
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "/about" },
     { name: "ACET", link: "/acet" },
-    { name: "STUDENT ZONE", link: "/student" },
+    { name: "STUDENT ZONE", link: "/students" },
     { name: "FACULTY ZONE", link: "/faculty" },
     { name: "CONTACT US", link: "/contact" },
   ];
