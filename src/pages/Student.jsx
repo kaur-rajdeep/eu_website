@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Student() {
   return (
-    <div>Student Zone : Will be made by shweta negi</div>
-  )
+    <div className="mt-16">Student Zone : Will be made by shweta negi</div>
+  );
 }
