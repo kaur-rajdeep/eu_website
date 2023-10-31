@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const slideStyles = {
   width: "100%",
@@ -65,6 +65,15 @@ const ImageSlider = ({ slides }) => {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
+
+  useEffect(() => {
+    const timer = setInterval(goToNext, 3000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [currentIndex]);
+
 
   return (
     <div style={sliderStyles}>
