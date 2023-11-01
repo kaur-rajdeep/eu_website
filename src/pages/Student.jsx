@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/Carousel";
+// import Carousel from '../components/Carousel';
 export default function Student() {
   const images = [
     "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",

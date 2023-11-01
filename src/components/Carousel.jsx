@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect } from 'react';
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,3 +37,4 @@ const Carousel = ({ images }) => {
 };
 
 export default Carousel;
+ 
