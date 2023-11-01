@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 
 const Carousel = ({ images }) => {
@@ -34,3 +35,5 @@ const Carousel = ({ images }) => {
 };
 
 export default Carousel;
+=======
+>>>>>>> 98457df7170209cb7536780140910300eff46ae7
