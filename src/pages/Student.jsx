@@ -1,7 +1,7 @@
 import React from 'react';
-import ImageSlider from "../components/Carousel"
+import Carousel from '../components/Carousel';
 export default function Student() {
-  const slides = [
+  const images = [
     { url: "https://th.bing.com/th/id/OIP.6af_KSwpOoj7pJWKX0yhIAHaFj?w=225&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7", title: "image1" },
     { url: "https://th.bing.com/th/id/OIP.LS0c-TEMqb5A4vI1MUTPlQHaDg?w=322&h=165&c=7&r=0&o=5&dpr=1.3&pid=1.7", title: 'image2' },
     { url: "https://th.bing.com/th/id/OIP.yY-E-Mu1SHC02rwOHKC1XgHaDm?w=327&h=170&c=7&r=0&o=5&dpr=1.3&pid=1.7", title: "image3" },
@@ -15,7 +15,7 @@ export default function Student() {
     return (
         <div className="mt-16">Student Zone: Will be made by Shweta Negi
         <div style={containerStyles}>
-        <ImageSlider slides={slides} />
+        <Carousel />
       </div>
         
         </div>
