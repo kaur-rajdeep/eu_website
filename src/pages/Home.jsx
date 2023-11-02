@@ -1,9 +1,12 @@
 import React from "react";
+import Carousel from "../components/Carousel";
+import GetInTouch from "../components/GetInTouch";
 
 function Home() {
-    return (
-      // IMAGES CAROUSEL
-      // MISSION
+  return (
+    <>
+      {/* // IMAGES CAROUSEL
+      // MISSION */}
       <div className="color mt-16 h-[50vh] grid justify-center">
         <p className="font-bold lg:text-6xl text-4xl text-center text-white lg:mt-12 mt-16">
           OUR MISSION
@@ -15,12 +18,13 @@ function Home() {
           mankind with compassion and love."
         </p>
       </div>
-      // WHY ETERNAL UNIVERSITY
+      {/* // WHY ETERNAL UNIVERSITY
       // COLLEGES
       // NOTICE BOARD
-      // GET IN TOUCH
-    );
-
+      // GET IN TOUCH */}
+      <GetInTouch />
+    </>
+  );
 }
 
 export default Home;
