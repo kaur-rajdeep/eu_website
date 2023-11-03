@@ -1,5 +1,6 @@
-import React from "react";
-import Carousel from '../components/Carousel'
+import React from 'react';
+import Carousel from '../components/Carousel';
+import MenuBar from '../components/StudentZone_MenuBar';
 
 const images = [
   'https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg',
@@ -10,18 +11,39 @@ const images = [
 ];
 
 const containerStyles = {
-  width: "500px",
-  height: "280px",
-  margin: "0 ",
+  width: "400px",
+  height: "680px",
+  margin: "0",
 };
 
 const Student = () => {
   return (
-    <div className="mt-16">
+    <div className="text-center">
+
+
       <div style={containerStyles}>
         <Carousel images={images} />
       </div>
+
+      <div>
+        <MenuBar/>
+      </div>
+
+
+      <div className="color text-2xl font-bold mt-10  h-[30vh]">
+        <div className="text-4xl font-bold mb-4 py-8 ">Student Zone</div>
+        <p>
+          "Education is the key that unlocks the door
+          <br /> 
+          to a world of possibilities,
+          where knowledge empowers students to
+          <br />
+          shape the future and realize their dreams."
+        </p>
+      </div>
+      <div className='color mt-10 h-[15vh]'></div>
     </div>
+    
   );
 };
 
