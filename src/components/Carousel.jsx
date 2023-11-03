@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 
 const Carousel = ({ images }) => {
@@ -23,7 +24,9 @@ const Carousel = ({ images }) => {
             alt={`carousel-${index}`}
             className="h-full w-full object-cover absolute transition-transform duration-500"
             style={{
-              left: `${(index - currentIndex + images.length) % images.length * 100}%`,
+              left: `${
+                ((index - currentIndex + images.length) % images.length) * 100
+              }%`,
               transform: `translateX(0)`,
             }}
           />

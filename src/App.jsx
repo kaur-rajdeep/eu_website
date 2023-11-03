@@ -1,6 +1,6 @@
 import './App.css'
 import React from "react";
-import { Acet } from "./pages/Acet";
+import Acet  from "./pages/Acet";
 import "./index.css";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
