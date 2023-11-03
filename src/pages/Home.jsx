@@ -94,7 +94,7 @@ function Home() {
         </div>
       </div>
       {/* // COLLEGES */}
-
+      <div>Colleges</div>
       {/* // NOTICE BOARD  */}
       <NoticeBoard />
       {/* // GET IN TOUCH */}
