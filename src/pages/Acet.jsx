@@ -1,5 +1,6 @@
 import { height } from '@mui/system';
 import React from 'react'
+import Carousel from "../components/Carousel";
 
 
 import "./Acet.css"
