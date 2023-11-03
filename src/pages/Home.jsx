@@ -40,35 +40,61 @@ function Home() {
         <p className="brown font-extrabold text-5xl text-center mt-12">
           Why Eternal University?
         </p>
-        <p className="brown text-center font-semibold mt-10 md:text-xl">
+        <p className="brown text-center font-semibold mt-10 md:text-xl h-24">
           Eternal university is NAAC Accredited & ISO 9001: 2015. The university
           is Recognised by UGC | AICTE | INC | NCTE | DISR | DBT | DRDO.
         </p>
       </div>
       {/* COUNTER */}
-      <div className="grid justify-center grid-cols-4 mt-16">
-        <div className="m-[10%] w-24 h-24 color rounded-full lg:w-52 lg:h-52">
-          <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-            <CounterComponent toValue={2200} color="#F8D7C2" separator={true} />
+      <div className="grid justify-center lg:grid-cols-4 mt-16 md:grid-cols-2">
+        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+              <CounterComponent
+                toValue={2200}
+                color="#F8D7C2"
+                separator={true}
+              />
+            </div>
           </div>
+          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl ">
+            Top private girls only university in Northern India.
+          </p>
         </div>
-        <div className="m-[10%] w-24 h-24 color rounded-full lg:w-52 lg:h-52">
-          <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-            <CounterComponent toValue={10} color="#F8D7C2" separator={true} />
+        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+              <CounterComponent toValue={10} color="#F8D7C2" separator={true} />
+            </div>
           </div>
+          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-4">
+            Ongoing Research Projects in Various fields
+          </p>
         </div>
-        <div className="m-[10%] w-24 h-24 color rounded-full lg:w-52 lg:h-52">
-          <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-            <CounterComponent toValue={63} color="#F8D7C2" separator={true} />
+        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+              <CounterComponent toValue={63} color="#F8D7C2" separator={true} />
+            </div>
           </div>
+          <p className="brown w-64 h-28 font-semibold m-[12%] text-xl pr-8">
+            Latest Undergraduate, Postgraduate and Doctorate Course as per the
+            modern industry needs
+          </p>
         </div>
-        <div className="m-[10%] w-24 h-24 color rounded-full lg:w-52 lg:h-52">
-          <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-            <CounterComponent toValue={50} color="#F8D7C2" separator={true} />
+        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+              <CounterComponent toValue={50} color="#F8D7C2" separator={true} />
+            </div>
           </div>
+          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-4">
+            Global alliances with international companies & universities.
+          </p>
         </div>
       </div>
       {/* // COLLEGES */}
+
       {/* // NOTICE BOARD  */}
       <NoticeBoard />
       {/* // GET IN TOUCH */}
