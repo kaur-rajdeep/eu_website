@@ -16,3 +16,7 @@ body{
 .brown{
     color:#945125;
 }
+
+::-webkit-scrollbar{
+    width: none;
+}
