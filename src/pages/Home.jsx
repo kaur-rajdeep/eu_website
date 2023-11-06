@@ -3,6 +3,7 @@ import Carousel from "../components/Carousel";
 import GetInTouch from "../components/GetInTouch";
 import NoticeBoard from "../components/NoticeBoard";
 import CounterComponent from "../components/Counter";
+import Colleges_Card from "../components/Colleges_Card";
 
 function Home() {
   const images = [
@@ -94,6 +95,9 @@ function Home() {
         <p className="brown font-extrabold text-5xl text-center mt-12">
           Colleges
         </p>
+        <div>
+          <Colleges_Card />
+        </div>
       </div>
       {/* // NOTICE BOARD  */}
       <NoticeBoard />

@@ -1,0 +1,47 @@
+.card {
+    position: relative;
+    max-width: 340px;
+    height: 260px;
+    background: #fff;
+    margin: 15px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    height: 420px;
+  }
+
+  .card .imgBx {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    top: -60px;
+    z-index: 1;
+  }
+
+  .card .imgBx img {
+    max-width: 340px;
+    border-radius: 4px;
+  }
+
+  .card .content {
+    margin-top:0;
+    padding: 5px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.3s;
+  }
+  
