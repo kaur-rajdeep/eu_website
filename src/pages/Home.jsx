@@ -4,6 +4,7 @@ import GetInTouch from "../components/GetInTouch";
 import NoticeBoard from "../components/NoticeBoard";
 import CounterComponent from "../components/Counter";
 import Colleges_Card from "../components/Colleges_Card";
+import college_card_data from "../store/college_card_data";
 
 function Home() {
   const images = [
@@ -20,6 +21,9 @@ function Home() {
     margin: "0 ",
   };
 
+  const cards = college_card_data.map((item) => {
+    return <Colleges_Card key={item.id} {...item} />;
+  });
   return (
     <>
       {/* IMAGES CAROUSEL */}
@@ -95,9 +99,7 @@ function Home() {
         <p className="brown font-extrabold text-5xl text-center mt-12">
           Colleges
         </p>
-        <div>
-          <Colleges_Card />
-        </div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-12">{cards}</div>
       </div>
       {/* // NOTICE BOARD  */}
       <NoticeBoard />

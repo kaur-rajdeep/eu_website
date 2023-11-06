@@ -1,22 +1,17 @@
 import React from "react";
 import "./Colleges_Card.css";
 
-function Colleges_Card() {
+function Colleges_Card(props) {
   return (
     <>
-      <div className="card rounded-lg backdrop-blur-lg shadow-lg shadow-neutral-600">
+      <div className="card rounded-lg backdrop-blur-lg shadow-lg shadow-neutral-600  mt-[25%]">
         <div className="imgBx">
-          <img
-            src="https://www.targetadmission.com/img/colleges/optimized/600/IMG-1-503761281.jpg"
-            alt="college_image"
-          />
+          <img src={props.imageUrl} alt="college_image" />
         </div>
-        <p className="text-center font-semibold text-xl -mt-10">
-          Name of College
-        </p>
+        <p className="text-center font-semibold text-lg -mt-10">{props.name}</p>
         <div className="content">
           <p className="text-center font-medium text-lg p-2">
-            discription about college
+            {props.description}
           </p>
         </div>
       </div>
