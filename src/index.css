@@ -2,21 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.navbar{
+    background: #05161A;
+}
 
 body{
-    background-color: #F8D7C2;
+    background-color: white;
     font-family: Poppins;
+    color:#05161A;
 }
 
 .color{
-    background-color: #D7793B;
+    background-color: white ;
+    color:#05161A;
 }
+/* blue for figures: #0F969C
+red for buttons: bg-[#f93a54] hover:bg-[#e3142c] */
 
 .brown{
-    color:#945125;
+    color:#05161A;
 }
 
 ::-webkit-scrollbar{
-    width: none;
+    width: 0;
 }
+
+/* orange: #D7793B */
+/* brown:#945125
+skin:#F8D7C2 */

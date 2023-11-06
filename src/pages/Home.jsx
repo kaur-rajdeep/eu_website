@@ -25,10 +25,10 @@ function Home() {
       <Carousel images={images} />
       {/* MISSION */}
       <div className="color h-[50vh] grid justify-center">
-        <p className="lg:text-5xl md:text-4xl text-3xl text-center text-white lg:mt-12 mt-16 font-[990]">
+        <p className="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-12 mt-16 font-[990]">
           OUR MISSION
         </p>
-        <p className="text-white lg:text-2xl md:w-[70vw] text-center lg:-mt-12 -mt-16 md:text-xl">
+        <p className="lg:text-2xl md:w-[70vw] text-center lg:-mt-12 -mt-16 md:text-xl">
           "To transform and empower young women talent through cutting edge
           education in science, technology, arts and management amalgamated with
           spiritual rejuvenation for their holistic development to serve the
@@ -47,34 +47,30 @@ function Home() {
       </div>
       {/* COUNTER */}
       <div className="grid justify-center lg:grid-cols-4 mt-16 md:grid-cols-2">
-        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C]  rounded-full lg:w-52 lg:h-52">
             <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-              <CounterComponent
-                toValue={2200}
-                color="#F8D7C2"
-                separator={true}
-              />
+              <CounterComponent toValue={2200} color="white" separator={true} />
             </div>
           </div>
           <p className="brown w-64 h-24 font-semibold m-[12%] text-xl ">
             Top private girls only university in Northern India.
           </p>
         </div>
-        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C]  rounded-full lg:w-52 lg:h-52">
             <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-              <CounterComponent toValue={10} color="#F8D7C2" separator={true} />
+              <CounterComponent toValue={10} color="white" separator={true} />
             </div>
           </div>
           <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-4">
             Ongoing Research Projects in Various fields
           </p>
         </div>
-        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C]  rounded-full lg:w-52 lg:h-52">
             <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-              <CounterComponent toValue={63} color="#F8D7C2" separator={true} />
+              <CounterComponent toValue={63} color="white" separator={true} />
             </div>
           </div>
           <p className="brown w-64 h-28 font-semibold m-[12%] text-xl pr-8">
@@ -82,10 +78,10 @@ function Home() {
             modern industry needs
           </p>
         </div>
-        <div className="border-4 border-white rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 color rounded-full lg:w-52 lg:h-52">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
+          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C] rounded-full lg:w-52 lg:h-52">
             <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
-              <CounterComponent toValue={50} color="#F8D7C2" separator={true} />
+              <CounterComponent toValue={50} color="white" separator={true} />
             </div>
           </div>
           <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-4">
@@ -94,7 +90,11 @@ function Home() {
         </div>
       </div>
       {/* // COLLEGES */}
-      <div>Colleges</div>
+      <div>
+        <p className="brown font-extrabold text-5xl text-center mt-12">
+          Colleges
+        </p>
+      </div>
       {/* // NOTICE BOARD  */}
       <NoticeBoard />
       {/* // GET IN TOUCH */}

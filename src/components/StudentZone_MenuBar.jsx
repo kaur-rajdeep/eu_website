@@ -41,21 +41,23 @@ export default function MenuBar() {
 
   return (
     <>
-      <nav className="text-white py-2 px-4 flex justify-between items-center h-16 mt-1 mb-10">
+      <nav className="py-2 px-4 flex justify-between items-center h-16 mt-1 mb-10">
         <ul className="flex">
           <li
-            className="mr-40 w-60 h-14 color rounded-md text-3xl font-bold pt-2"
+            className="mr-40 w-60 h-14 rounded-md text-3xl font-bold pt-2 bg-[#05161A] text-white"
             onClick={toggleAcademicsDropdown}
             ref={academicsRef}
           >
             Academics
             {academicsDropdownOpen && (
-              <div className="dropdown-content backdrop-blur-lg bg-slate-100 text-black font-semibold text-2xl mt-4 rounded-md">
-                <li className="p-2 border-2">
+              <div className="dropdown-content backdrop-blur-lg bg-blue-100 text-black font-semibold text-2xl mt-4 rounded-md">
+                <li className="p-2 border-2 ">
                   <CustomLink to="/academics/syllabus">Syllabus</CustomLink>
                 </li>
                 <li className="p-2 border-2">
-                  <CustomLink to="/academics/question-paper">Question Paper</CustomLink>
+                  <CustomLink to="/academics/question-paper">
+                    Question Paper
+                  </CustomLink>
                 </li>
                 <li className="p-2 border-2">
                   <CustomLink to="/academics/timetable">Timetable</CustomLink>
@@ -69,20 +71,20 @@ export default function MenuBar() {
               </div>
             )}
           </li>
-          <li className="mr-40 w-60 h-14 pt-2 color rounded-md text-3xl font-bold">
+          <li className="mr-40 w-60 h-14 pt-2 bg-[#05161A] text-white rounded-md text-3xl font-bold">
             <CustomLink to="/nss">NSS</CustomLink>
           </li>
-          <li className="mr-40 w-60 pt-2 h-14 color rounded-md text-3xl font-bold">
+          <li className="mr-40 w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
             <CustomLink to="/ncc">NCC</CustomLink>
           </li>
           <li
-            className="mr-40 w-60 h-14 color rounded-md text-3xl font-bold pt-2"
+            className="mr-40 w-60 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold pt-2"
             onClick={toggleClubsDropdown}
             ref={clubsRef}
           >
             Clubs
             {clubsDropdownOpen && (
-              <div className="dropdown-content backdrop-blur-lg bg-slate-100 text-black font-semibold text-2xl mt-4 rounded-md">
+              <div className="dropdown-content backdrop-blur-lg bg-blue-100 text-black font-semibold text-2xl mt-4 rounded-md">
                 <li className="p-2 border-2">
                   <CustomLink to="/clubs/club1">Club 1</CustomLink>
                 </li>

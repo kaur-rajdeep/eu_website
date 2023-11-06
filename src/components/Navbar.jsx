@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className="grid place-items-center">
-        <div className="color shadow-md  h-16 fixed top-0 left-0 backdrop-blur-lg mt-[-2px] z-10 border-2 m-0 w-[100%] ">
+        <div className="navbar shadow-md  h-16 fixed top-0 left-0 backdrop-blur-lg mt-[-2px] z-10 m-0 w-[100%] ">
           <div className="md:flex items-center justify-end py-4 md:px-10 px-7">
             <div
               onClick={() => setOpen(!open)}
@@ -31,7 +31,7 @@ export default function Navbar() {
               </SvgIcon>
             </div>
             <ul
-              className={`color md:flex md:items.center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1]  left-0 w-full md:w-auto md-pl-0 pl-9 transition-all duration-500 ease-in ${
+              className={`navbar md:flex md:items.center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1]  left-0 w-full md:w-auto md-pl-0 pl-9 transition-all duration-500 ease-in ${
                 open ? "top-20 opacity-100" : "top-[-490px]"
               } md:opacity-100 opacity-0`}
             >
