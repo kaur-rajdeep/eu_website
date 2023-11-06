@@ -5,7 +5,7 @@ function Colleges_Card(props) {
   return (
     <>
       <div className="card rounded-lg backdrop-blur-lg shadow-lg shadow-neutral-600  mt-[25%]">
-        <div className="imgBx">
+        <div className="imgBx shadow-slate-400">
           <img src={props.imageUrl} alt="college_image" />
         </div>
         <p className="text-center font-semibold text-lg -mt-10">{props.name}</p>
