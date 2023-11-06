@@ -42,7 +42,7 @@ class CounterComponent extends Component {
 
     return (
       <div
-        className="p-8 font-extrabold lg:text-5xl lg:p-14 lg:ml-0 text-center"
+        className="font-extrabold text-5xl p-14 ml-0 text-center"
         style={{ color }}
       >
         {separator ? currentValue.toLocaleString() : currentValue}+

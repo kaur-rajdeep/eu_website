@@ -47,9 +47,9 @@ function Home() {
       </div>
       {/* COUNTER */}
       <div className="grid justify-center lg:grid-cols-4 mt-16 md:grid-cols-2">
-        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C]  rounded-full lg:w-52 lg:h-52">
-            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12 mt-24">
+          <div className="m-[15%] -mt-32 bg-[#0F969C]  rounded-full w-52 h-52">
+            <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={2200} color="white" separator={true} />
             </div>
           </div>
@@ -57,9 +57,9 @@ function Home() {
             Top private girls only university in Northern India.
           </p>
         </div>
-        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C]  rounded-full lg:w-52 lg:h-52">
-            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12 mt-24">
+          <div className="m-[15%] -mt-32 bg-[#0F969C]  rounded-full w-52 h-52">
+            <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={10} color="white" separator={true} />
             </div>
           </div>
@@ -67,9 +67,9 @@ function Home() {
             Ongoing Research Projects in Various fields
           </p>
         </div>
-        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C]  rounded-full lg:w-52 lg:h-52">
-            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12 mt-24">
+          <div className="m-[15%] -mt-32 bg-[#0F969C]  rounded-full w-52 h-52">
+            <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={63} color="white" separator={true} />
             </div>
           </div>
@@ -78,9 +78,9 @@ function Home() {
             modern industry needs
           </p>
         </div>
-        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12">
-          <div className="m-[15%] lg:-mt-32 w-24 h-24 bg-[#0F969C] rounded-full lg:w-52 lg:h-52">
-            <div className="lg:mt-4 lg:-ml-4 -ml-2 m-0">
+        <div className="border-4 border-[#072E33] rounded-xl backdrop-blur-lg p-2 m-12 mt-24">
+          <div className="m-[15%] -mt-32 bg-[#0F969C] rounded-full w-52 h-52">
+            <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={50} color="white" separator={true} />
             </div>
           </div>
