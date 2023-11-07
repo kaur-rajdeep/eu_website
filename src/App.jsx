@@ -15,16 +15,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/acet" element={<Acet />} />
-          <Route path="/students" element={<Student />} />
-          <Route path="/faculty" element={<Faculty />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/acet" element={<Acet />} />
+        <Route path="/students" element={<Student />} />
+        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </>
   );
