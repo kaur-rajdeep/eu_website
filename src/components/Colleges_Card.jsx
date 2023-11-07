@@ -10,7 +10,7 @@ function Colleges_Card(props) {
         </div>
         <p className="text-center font-semibold text-lg -mt-10">{props.name}</p>
         <div className="content">
-          <p className="text-center font-medium text-lg p-2">
+          <p className="text-center font-medium text-sm p-2">
             {props.description}
           </p>
         </div>

@@ -1,5 +1,4 @@
 .card {
-    position: relative;
     max-width: 340px;
     height: 280px;
     background: #fff;
@@ -24,6 +23,7 @@
   .card .imgBx img {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     max-width: 340px;
+    min-height: 230px;
     border-radius: 4px;
   }
 

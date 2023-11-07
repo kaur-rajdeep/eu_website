@@ -99,7 +99,11 @@ function Home() {
         <p className="brown font-extrabold text-5xl text-center mt-12">
           Colleges
         </p>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-12">{cards}</div>
+        <div className="grid justify-items-center">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-12 gap-8">
+            {cards}
+          </div>
+        </div>
       </div>
       {/* // NOTICE BOARD  */}
       <NoticeBoard />
