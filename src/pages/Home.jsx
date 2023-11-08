@@ -29,7 +29,7 @@ function Home() {
       {/* IMAGES CAROUSEL */}
       <Carousel images={images} />
       {/* MISSION */}
-      <div className="color h-[50vh] grid justify-center">
+      <div className="h-[50vh] grid justify-center bg-[#072e33] text-white">
         <p className="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-12 mt-16 font-[990]">
           OUR MISSION
         </p>
@@ -52,27 +52,27 @@ function Home() {
       </div>
       {/* COUNTER */}
       <div className="grid justify-center lg:grid-cols-4 mt-16 md:grid-cols-2">
-        <div className="rounded-xl border-y-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
+        <div className="border-r-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
           <div className="m-[15%] -mt-32 bg-[#0F969C]  rounded-full w-52 h-52">
             <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={2200} color="white" separator={true} />
             </div>
           </div>
-          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl ">
+          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-8">
             Top private girls only university in Northern India.
           </p>
         </div>
-        <div className="rounded-xl border-y-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
+        <div className="border-r-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
           <div className="m-[15%] -mt-32 bg-[#0F969C]  rounded-full w-52 h-52">
             <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={10} color="white" separator={true} />
             </div>
           </div>
-          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-4">
+          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-8">
             Ongoing Research Projects in Various fields
           </p>
         </div>
-        <div className="rounded-xl border-y-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
+        <div className="border-r-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
           <div className="m-[15%] -mt-32 bg-[#0F969C]  rounded-full w-52 h-52">
             <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={63} color="white" separator={true} />
@@ -83,13 +83,13 @@ function Home() {
             modern industry needs
           </p>
         </div>
-        <div className="rounded-xl border-y-8 border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
+        <div className="border-[#05161A] backdrop-blur-lg p-2 m-12 mt-24">
           <div className="m-[15%] -mt-32 bg-[#0F969C] rounded-full w-52 h-52">
             <div className="mt-4 -ml-4 m-0">
               <CounterComponent toValue={50} color="white" separator={true} />
             </div>
           </div>
-          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-4">
+          <p className="brown w-64 h-24 font-semibold m-[12%] text-xl pr-8">
             Global alliances with international companies & universities.
           </p>
         </div>
@@ -99,8 +99,8 @@ function Home() {
         <p className="brown font-extrabold text-5xl text-center mt-12">
           Colleges
         </p>
-        <div className="grid justify-items-center">
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-12 gap-8">
+        <div className="grid justify-center">
+          <div className="mx-auto grid lg:grid-cols-4 md:grid-cols-3 mt-12 gap-8">
             {cards}
           </div>
         </div>

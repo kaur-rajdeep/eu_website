@@ -26,7 +26,7 @@ const Acet = () => {
       </div>
 
       <div class="">
-        <div class="color h-[50vh] grid justify-center">
+        <div class="bg-[#072e33] text-white h-[50vh] grid justify-center">
           <p class="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-28 font-[990]">
             AKAL COLLEGE OF ENGINEERING AND TECHNOLOGY
           </p>
