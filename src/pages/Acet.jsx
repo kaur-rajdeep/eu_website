@@ -3,16 +3,16 @@ import React from 'react'
 import Carousel from '../components/Carousel';
 
 import "./Acet.css"
+import FacultyCard from "../components/FacultyCard";
 function  Acet(){
   const images = [
-    'https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg',
-    'https://eternaluniversity.edu.in/images/activity/AGY11657703203EducationalVisit.jpg',
-    'https://eternaluniversity.edu.in/images/event/MI1656487146Conference.jpg',
-    'https://eternaluniversity.edu.in/images/activity/AMI1660805268CollegeActivity.jpg',
-    'https://eternaluniversity.edu.in/images/event/MI1660799332Camp.jpg'
+    "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
+    "https://eternaluniversity.edu.in/images/activity/AGY11657703203EducationalVisit.jpg",
+    "https://eternaluniversity.edu.in/images/event/MI1656487146Conference.jpg",
+    "https://eternaluniversity.edu.in/images/activity/AMI1660805268CollegeActivity.jpg",
+    "https://eternaluniversity.edu.in/images/event/MI1660799332Camp.jpg",
   ];
-  
-  
+
   const containerStyles = {
     width: "500px",
     height: "280px",
@@ -26,13 +26,13 @@ function  Acet(){
 
       {/* ACET */}
 
-      <div class="color h-[50vh] grid justify-center">
-        <p class="lg:text-5xl md:text-4xl text-3xl text-center text-black lg:mt-12 mt-16 font-[990]">
+      <div class="text-white bg-[#072e33] h-[50vh] grid justify-center">
+        <p class="lg:text-4xl md:text-2xl text-xl text-center lg:mt-12 mt-16 font-extrabold">
           AKAL COLLEGE OF ENGINEERING AND
           <p>TECHNOLOGY</p>
         </p>
 
-        <p class="text-black lg:text-2xl md:w-[70vw] text-center lg:-mt-12 -mt-16 md:text-xl">
+        <p class="lg:text-2xl md:w-[70vw] text-center lg:-mt-12 -mt-16 md:text-xl">
           Kalgidhar Trust is a premier organization of universal brotherhood,
           was the main force behind the mission of “Removal of Economic
           Backwardness through Technology”.
@@ -41,12 +41,12 @@ function  Acet(){
 
       {/* COURSES */}
 
-      <div class=" h-[50vh] grid justify-center mb-16">
-        <p class=" brown lg:text-5xl md:text-4xl text-3xl text-center text-white lg:mt-12 mt-16 font-[990] mb-6">
+      <div class="grid justify-center mb-16">
+        <p class=" brown lg:text-5xl md:text-3xl text-2xl text-center text-white lg:mt-12 mt-16 font-extrabold mb-6">
           COURSES
         </p>
-        <div class="flex flex-row md:grid-cols-1 lg:grid-cols-2">
-          <div class="max-w-xs bg-white border border-gray-100  rounded-lg shadow dark:bg-gray-600 dark:border-gray-500 m-2 sm:ml-5">
+        <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-4 place-items-center ">
+          <div class=" rounded-lg m-2 lg:w-[30vw] md:w-[60vw] w-[90vw] border-2 border-[#294d61]">
             <div>
               <img
                 class=" rounded-t-lg"
@@ -54,20 +54,20 @@ function  Acet(){
                 alt=""
               />
             </div>
-            <div class="p-3">
+            <div class="p-3 grid place-items-center shadow-md shadow-[#294d61] rounded-md">
               <div>
-                <h5 class="mb-2 text-lg font-bold ">BTECH</h5>
+                <h5 class="mb-2 text-xl font-extrabold text-center">BTECH</h5>
               </div>
               <a
                 href="#"
-                class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-white  bg-[#f93a54] rounded-lg hover:bg-[#e3142c] focus:ring-4 focus:outline-none"
+                class="p-2 text-sm font-medium text-center text-white  bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none"
               >
                 Read more
               </a>
             </div>
           </div>
 
-          <div class="max-w-xs bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-600 dark:border-gray-500 m-2 lg:ml-80">
+          <div class="rounded-lg m-2 lg:w-[30vw] md:w-[60vw] w-[90vw] border-2 border-[#294d61]">
             <div>
               <img
                 class=" rounded-t-lg"
@@ -75,15 +75,13 @@ function  Acet(){
                 alt=""
               />
             </div>
-            <div class="p-3">
+            <div class="p-3 grid place-items-center shadow-md shadow-[#294d61] rounded-md">
               <div>
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                  MTECH
-                </h5>
+                <h5 class="mb-2 text-xl font-extrabold text-center">MTECH</h5>
               </div>
               <a
                 href="#"
-                class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-white bg-[#f93a54] rounded-lg hover:bg-[#e3142c] focus:ring-4 focus:outline-none "
+                class="p-2 text-sm font-medium text-center text-white bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none "
               >
                 Read more
               </a>
@@ -91,8 +89,8 @@ function  Acet(){
           </div>
         </div>
       </div>
-
-      <div class="">
+      {/* ---------------------------------------------------FACULTY--------------------------------- */}
+      {/* <div class="">
         <div class="color h-[90vh] grid justify-center">
           <p class="lg:text-5xl md:text-4xl text-3xl text-center text-black lg:mt-12 mt-16 font-[990] mb-19">
             FACULTY
@@ -215,7 +213,10 @@ function  Acet(){
             </div>
           </div>
         </div>
-      </div>
+  </div>*/}
+      <FacultyCard />
+
+      {/* --------------------------------CLUBS---------------------------------------------------------- */}
 
       <div class=" h-[50vh] grid justify-center mb-16">
         <p class=" brown lg:text-5xl md:text-4xl text-3xl text-center text-white lg:mt-12 mt-16 font-[990] mb-6">

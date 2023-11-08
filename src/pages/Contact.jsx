@@ -171,7 +171,7 @@ const Contact = () => {
         />
       </div>
 
-      <h1 className="text-3xl font-extrabold mt-8 mb-4">
+      <h1 className="text-3xl font-extrabold mt-8 mb-4 p-4">
         Important Contacts Of Eternal University
       </h1>
 
