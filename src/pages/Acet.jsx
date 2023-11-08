@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import "./Acet.css";
 import FacultyCard from "../components/FacultyCard";
-import AcetClubs from "../components/acetClubs";
+import AcetClubs from "../components/AcetClubs";
 function Acet() {
   const images = [
     "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
