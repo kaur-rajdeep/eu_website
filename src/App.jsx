@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Faculty from "./pages/Faculty";
 import NCC from './pages/NCC';
 import NSS from './pages/NSS';
+import Clubs from './pages/Clubs';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/NCC" element={<NCC />} />
         <Route path='/NSS' element={<NSS />} />
+        <Route path='/Clubs' element={<Clubs />} />
+
 
       </Routes>
       <Footer />

@@ -10,9 +10,10 @@ const images = [
 ];
 
 const containerStyles = {
-  width: '400px', // Adjust the container width
-  margin: '0 auto', // Center the container
+  width: '400px',
+  margin: '0',
 };
+
 
 const cardStyles = {
   height: '450px',
@@ -24,22 +25,22 @@ const cardStyles = {
 
 function NSS() {
   const [showRegistrationForm, setShowRegistrationForm] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false); // Add state to track form submission
 
   const handleRegistrationFormClick = () => {
     setShowRegistrationForm(true);
   };
 
   const handleFormSubmission = () => {
+    // Perform form submission logic here (if any)
     console.log('Form submitted');
-    setIsSubmitted(true);
-    setShowRegistrationForm(false);
+    setIsSubmitted(true); // Set the submitted state to true
+    setShowRegistrationForm(false); // Hide the registration form after submission
   };
-
   return (
     <div className="container" style={containerStyles}>
       <Carousel images={images} />
-      <h1 className="text-center mt-5">NSS</h1>
+      <h1 className="text-center ">NSS</h1>
       <div className="d-flex">
         <div className="card" style={cardStyles}>
           <h4 className="text-center">NSS (National Service Scheme) at Eternal University:</h4>
