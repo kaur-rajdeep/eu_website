@@ -77,28 +77,8 @@ export default function MenuBar() {
           <li className="mr-40 w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
             <CustomLink to="/ncc">NCC</CustomLink>
           </li>
-          <li
-            className="mr-40 w-60 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold pt-2"
-            onClick={toggleClubsDropdown}
-            ref={clubsRef}
-          >
-            Clubs
-            {clubsDropdownOpen && (
-              <div className="dropdown-content backdrop-blur-lg bg-blue-100 text-black font-semibold text-2xl mt-4 rounded-md">
-                <li className="p-2 border-2">
-                  <CustomLink to="/clubs/club1">Club 1</CustomLink>
-                </li>
-                <li className="p-2 border-2">
-                  <CustomLink to="/clubs/club2">Club 2</CustomLink>
-                </li>
-                <li className="p-2 border-2">
-                  <CustomLink to="/clubs/club3">Club 3</CustomLink>
-                </li>
-                <li className="p-2 border-2 rounded-md">
-                  <CustomLink to="/clubs/club4">Club 4</CustomLink>
-                </li>
-              </div>
-            )}
+          <li className="mr-40 w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
+            <CustomLink to="/Clubs">Clubs</CustomLink>
           </li>
         </ul>
       </nav>
