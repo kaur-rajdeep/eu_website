@@ -169,11 +169,13 @@ const Contact = () => {
     };
   }, []); 
   return (
-    <div className="mt-16">
+    <div className="mt-16 flex flex-col items-center">
       {/* Carousel component */}
       <div className="h-[60vh] w-[100vw] relative overflow-hidden">
         <img src={carouselImages[currentIndex]} alt={`carousel-${currentIndex}`} className="h-full w-full object-cover" />
       </div>
+
+      <h1 className="text-3xl font-bold mt-8 mb-4">Important Contacts Of Eternal University</h1>
 
       <div className="color grid grid-cols-1 md:grid-cols-4 gap-6 p-8">
         {cardsData.map((card, index) => (
@@ -197,7 +199,6 @@ const Contact = () => {
       </div>
     </div>
   );
-
 };
 
-export default Contact
+export default Contact;
