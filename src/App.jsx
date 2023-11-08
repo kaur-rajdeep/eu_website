@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Faculty from "./pages/Faculty";
 import NCC from './pages/NCC';
+import NSS from './pages/NSS';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/NCC" element={<NCC />} />
+        <Route path='/NSS' element={<NSS />}  />
+
 
       </Routes>
       <Footer />
