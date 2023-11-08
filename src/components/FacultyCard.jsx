@@ -40,13 +40,13 @@ const FacultyCard = () => {
 
   return (
     <div className="">
-      <div className="color h-[90vh] grid justify-center">
-        <p className="lg:text-5xl md:text-4xl text-3xl text-center text-black lg:mt-12 mt-16 font-[990] mb-19">
+      <div className="color grid justify-center">
+        <p className="lg:text-5xl md:text-4xl text-3xl text-center text-black lg:mt-12 mt-16 font-[990] mb-20">
           FACULTY
         </p>
 
-        <div className="flex flex-row min-screen items-center justify-center lg:-mt-45">
-          <div className="grid grid-cols-3 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {facultyData.map((faculty, index) => (
               <div
                 key={index}
