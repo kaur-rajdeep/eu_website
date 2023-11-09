@@ -44,28 +44,28 @@ export default function MenuBar() {
       <nav className="grid px-1 md:place-items-center">
         <ul className="grid grid-cols-4 gap-1 md:gap-4">
           <li
-            className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
+            className="rounded-md md:text-2xl lg:max-h-[8vh] md:max-h-[5vh] max-h-[6vh] text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
             onClick={toggleAcademicsDropdown}
             ref={academicsRef}
           >
             Academics
             {academicsDropdownOpen && (
-              <div className="dropdown-content backdrop-blur-lg bg-blue-100 text-black font-semibold text-2xl mt-4 rounded-md">
-                <li className="p-2 border-2 ">
+              <div className="dropdown-content backdrop-blur-md bg-black bg-opacity-40 text-white sm:font-normal lg:text-xl  mt-6 w-[250px] rounded-md border-2">
+                <li className="p-2 ">
                   <CustomLink to="/academics/syllabus">Syllabus</CustomLink>
                 </li>
-                <li className="p-2 border-2">
+                <li className="p-2 ">
                   <CustomLink to="/academics/question-paper">
                     Question Paper
                   </CustomLink>
                 </li>
-                <li className="p-2 border-2">
+                <li className="p-2 ">
                   <CustomLink to="/academics/timetable">Timetable</CustomLink>
                 </li>
-                <li className="p-2 border-2">
+                <li className="p-2">
                   <CustomLink to="/academics/datesheet">Datesheet</CustomLink>
                 </li>
-                <li className="p-2 border-2 rounded-md">
+                <li className="p-2">
                   <CustomLink to="/academics/result">Result</CustomLink>
                 </li>
               </div>
