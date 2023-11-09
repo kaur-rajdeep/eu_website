@@ -41,10 +41,12 @@ export default function MenuBar() {
 
   return (
     <>
-      <nav className="py-2 px-4 flex justify-between items-center h-16 mt-1 mb-10">
-        <ul className="flex">
+      <nav className=" px-4  justify-between items-center">
+        
+        <ul className="flex sm:space-x-4  ">
+          
           <li
-            className="mr-40 w-60 h-14 rounded-md text-3xl font-bold pt-2 bg-[#05161A] text-white"
+            className=" lg:space-x-80 lg:w-60 rounded-md text-3xl font-bold pt-2 bg-[#05161A] text-white cursor-pointer"
             onClick={toggleAcademicsDropdown}
             ref={academicsRef}
           >
@@ -71,13 +73,13 @@ export default function MenuBar() {
               </div>
             )}
           </li>
-          <li className="mr-40 w-60 h-14 pt-2 bg-[#05161A] text-white rounded-md text-3xl font-bold">
+          <li className=" w-60  pt-2 bg-[#05161A] text-white rounded-md text-3xl font-bold">
             <CustomLink to="/nss">NSS</CustomLink>
           </li>
-          <li className="mr-40 w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
+          <li className="w-60 pt-2  bg-[#05161A] text-white rounded-md text-3xl font-bold">
             <CustomLink to="/ncc">NCC</CustomLink>
           </li>
-          <li className="mr-40 w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
+          <li className=" w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
             <CustomLink to="/Clubs">Clubs</CustomLink>
           </li>
         </ul>
@@ -93,5 +95,4 @@ function CustomLink({ to, children, ...props }) {
     </Link>
   );
 }
-
 

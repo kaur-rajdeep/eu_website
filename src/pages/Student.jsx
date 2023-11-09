@@ -10,38 +10,34 @@ const images = [
   'https://eternaluniversity.edu.in/images/event/MI1660799332Camp.jpg'
 ];
 
-const containerStyles = {
-  width: "400px",
-  height: "680px",
-  margin: "0",
-};
 
 const Student = () => {
   return (
     <div className="text-center">
 
+      {/* Carousel */}
 
-      <div style={containerStyles}>
         <Carousel images={images} />
-      </div>
 
-      <div>
+
+        {/* menu bar */}
+
+      <div className='mt-6 mb-6'>
         <MenuBar/>
       </div>
 
-
-      <div className="color text-2xl font-bold mt-10  h-[30vh]">
-        <div className="text-4xl font-bold mb-4 py-8 ">Student Zone</div>
-        <p>
-          "Education is the key that unlocks the door
-          <br /> 
-          to a world of possibilities,
-          where knowledge empowers students to
-          <br />
-          shape the future and realize their dreams."
+      {/* Student Zone */}
+      <div className="h-[50vh] grid justify-center bg-[#072e33] text-white">
+        <p className="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-12 mt-16 font-[990]">
+        Student Zone
+        </p>
+        <p className="lg:text-2xl md:w-[70vw] text-center lg:-mt-12 -mt-16 md:text-xl">
+          "Education unlocks a world of opportunities and empowers students to shape their future.
+           It nurtures critical thinking, creativity, and global awareness. Our institution is dedicated to
+          unleashing potential, fostering knowledge, and inspiring meaningful change."
         </p>
       </div>
-      <div className='color mt-10 h-[15vh]'></div>
+
     </div>
     
   );
