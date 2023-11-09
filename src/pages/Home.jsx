@@ -1,11 +1,11 @@
 import React from "react";
 import Carousel from "../components/Carousel";
 import GetInTouch from "../components/GetInTouch";
-import NoticeBoard from "../components/NoticeBoard";
 import CounterComponent from "../components/Counter";
 import Colleges_Card from "../components/Colleges_Card";
 import college_card_data from "../store/college_card_data";
-
+import NoticeBoard from "../components/NoticeBoard";
+import NoticeBoardData from "../store/Notice_Board_data";
 function Home() {
   const images = [
     "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
@@ -105,8 +105,13 @@ function Home() {
           </div>
         </div>
       </div>
+
       {/* // NOTICE BOARD  */}
-      <NoticeBoard />
+      <div>
+        <h3 className="brown font-extrabold text-5xl text-center mt-12"> Notice Board</h3>
+        <NoticeBoard images={NoticeBoardData} />
+      </div>
+      
       {/* // GET IN TOUCH */}
       <GetInTouch />
     </>

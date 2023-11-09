@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
+
 export default function MenuBar() {
   const [academicsDropdownOpen, setAcademicsDropdownOpen] = useState(false);
   const academicsRef = useRef(null);
@@ -33,7 +34,7 @@ export default function MenuBar() {
       <nav className="grid px-1 md:place-items-center">
         <ul className="grid grid-cols-4 gap-1 md:gap-4">
           <li
-            className="rounded-md md:text-2xl lg:max-h-[8vh] md:max-h-[5vh] max-h-[6vh] text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
+            className="rounded-lg md:text-2xl lg:max-h-[8vh] md:w-[20vw]   max-h-[8vh] text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
             onClick={toggleAcademicsDropdown}
             ref={academicsRef}
           >
@@ -60,13 +61,13 @@ export default function MenuBar() {
               </div>
             )}
           </li>
-          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-lg md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/nss">NSS</CustomLink>
           </li>
-          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-lg md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/ncc">NCC</CustomLink>
           </li>
-          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-lg md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/Clubs">Clubs</CustomLink>
           </li>
         </ul>
