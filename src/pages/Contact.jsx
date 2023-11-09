@@ -124,73 +124,79 @@ const carouselImages = [
 
 const cardsData = [
   {
-    description: 'Vc Office', 
-    contact:'+91-9805098724',
-    email:'contact@eternaluniversity.edu.in',
-    name:'Vice-Chancellor ',
-    image: 'https://media.istockphoto.com/id/186608462/photo/thirty-something-hispanic-man.jpg?s=612x612&w=0&k=20&c=MoKRsmvCtyu6wVa1tdn5aSZHzpUFdPD8qjSlyL0lHS8='
-    
-    
+    description: "Vc Office",
+    contact: "+91-9805098724",
+    email: "contact@eternaluniversity.edu.in",
+    name: "Vice-Chancellor ",
+    image:
+      "https://media.istockphoto.com/id/186608462/photo/thirty-something-hispanic-man.jpg?s=612x612&w=0&k=20&c=MoKRsmvCtyu6wVa1tdn5aSZHzpUFdPD8qjSlyL0lHS8=",
   },
   {
-  description: 'Pro-Vice-Chancellor',
-  contact:'+91-9815984489',
-  email:'pvc@eternaluniversity.edu.in ',
-  name:'Pro-Vice-Chancellor ',
-    image: 'https://media.istockphoto.com/id/639058162/photo/mid-adult-man.jpg?s=612x612&w=0&k=20&c=G04KXC7On51hJjbwklqTN32lLW6BTvDG6hNQ3wqXc88='
+    description: "Pro-Vice-Chancellor",
+    contact: "+91-9815984489",
+    email: "pvc@eternaluniversity.edu.in ",
+    name: "Pro-Vice-Chancellor ",
+    image:
+      "https://media.istockphoto.com/id/639058162/photo/mid-adult-man.jpg?s=612x612&w=0&k=20&c=G04KXC7On51hJjbwklqTN32lLW6BTvDG6hNQ3wqXc88=",
   },
   {
-    
-    description: 'Registar Office',
-    contact:'+91-9805098718',
-    email:'registrar@eternaluniversity.edu.in ',
-    name:' Registar',
-    image: 'https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60='
+    description: "Registrar Office",
+    contact: "+91-9805098718",
+    email: "registrar@eternaluniversity.edu.in ",
+    name: " Registar",
+    image:
+      "https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60=",
   },
-
-  {
-    description: 'Dean Students Welfare',
-    contact:'+91-9418061815',
-    email:'dsw@eternaluniversity.edu.in',
-    name:'Dr.Yogeeta Thakur',
-    image: 'https://media.istockphoto.com/id/1181862359/photo/real-chinese-young-woman-with-happy-expression.jpg?s=612x612&w=0&k=20&c=tCyjiUAmECiQQH5p3kCKZOWbtPsc8ZL4WuaBLwiWRiQ='
-  },
-  ];
+];
 const Contact = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
-    }, 3000); 
-    
+    }, 3000);
+
     return () => {
-      clearInterval(interval); 
+      clearInterval(interval);
     };
-  }, []); 
+  }, []);
   return (
     <div className="mt-16 flex flex-col items-center">
       {/* Carousel component */}
       <div className="h-[60vh] w-[100vw] relative overflow-hidden">
-        <img src={carouselImages[currentIndex]} alt={`carousel-${currentIndex}`} className="h-full w-full object-cover" />
+        <img
+          src={carouselImages[currentIndex]}
+          alt={`carousel-${currentIndex}`}
+          className="h-full w-full object-cover"
+        />
       </div>
 
-      <h1 className="text-3xl font-bold mt-8 mb-4">Important Contacts Of Eternal University</h1>
+      <h1 className="text-3xl font-extrabold mt-8 mb-4 p-4">
+        Important Contacts Of Eternal University
+      </h1>
 
-      <div className="color grid grid-cols-1 md:grid-cols-4 gap-6 p-8">
+      <div className="color grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-8">
         {cardsData.map((card, index) => (
-          <div key={index} className="bg-white shadow-md p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
+          <div
+            key={index}
+            className="shadow-[#294d61] shadow-inner p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105 h-[400px] mt-16"
+          >
             <div className="mb-4">
-              <img src={card.image} alt={`profile-${index}`} className="w-16 h-16 mx-auto mb-2 object-cover rounded-full" />
-              <div className="border-b mb-2 pb-2">
-                <h1 className="text-lg font-bold mb-1">{card.name}</h1>
-              </div>
-              <div className="mb-2">
-                <div className="mb-1">
-                  <strong>Email:</strong> {card.email}
-                </div>
-                <div className="mb-1">
-                  <strong>Phone:</strong> {card.contact}
+              <img
+                src={card.image}
+                alt={`profile-${index}`}
+                className="w-44 h-44 mx-auto mb-2 object-cover rounded-full"
+              />
+              <div className="mb-2 pb-2">
+                <h1 className="text-2xl font-bold mb-1 mt-8">{card.name}</h1>
+
+                <div className="mb-2 mt-4 text-left">
+                  <div className="mb-1 mt-12">
+                    <strong>Email:</strong> {card.email}
+                  </div>
+                  <div className="mb-1">
+                    <strong>Phone:</strong> {card.contact}
+                  </div>
                 </div>
               </div>
             </div>

@@ -29,7 +29,7 @@ class CounterComponent extends Component {
       } else {
         this.stopCounter();
       }
-    }, 50);
+    }, 5);
   }
 
   stopCounter() {
