@@ -107,13 +107,16 @@ function Home() {
       </div>
 
       {/* // NOTICE BOARD  */}
-      <div>
-        <h3 className="brown font-extrabold text-5xl text-center mt-12"> Notice Board</h3>
+      <div >
+        <h3 className="brown font-extrabold text-5xl text-center mt-12 "> Notice Board</h3>
         <NoticeBoard images={NoticeBoardData} />
       </div>
       
       {/* // GET IN TOUCH */}
+      <div >
       <GetInTouch />
+      </div>
+      
     </>
   );
 }
