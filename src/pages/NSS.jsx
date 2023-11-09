@@ -130,7 +130,7 @@ function NSS() {
       </div>
 
       {!showRegistrationForm || isSubmitted ? (
-        <div className="flex text-center items-center justify-center mt-6">
+        <div className=" text-center mt-14 mb-10 ">
           <button
             className="bg-[#072e33] text-white btn btn-primary w-60 h-14 rounded-full text-xl font-bold pt-2"
             onClick={handleRegistrationFormClick}>

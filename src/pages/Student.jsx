@@ -13,7 +13,9 @@ const images = [
 
 const Student = () => {
   return (
-    <div className="text-center">
+
+
+    <div className="text-center mb-10">
 
       {/* Carousel */}
 
@@ -37,6 +39,8 @@ const Student = () => {
           unleashing potential, fostering knowledge, and inspiring meaningful change."
         </p>
       </div>
+
+      
 
     </div>
     

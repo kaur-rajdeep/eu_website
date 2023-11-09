@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
 import RegistrationForm from "../components/RegistrationForm";
-import SlidingCards from "../components/ImageSlidingCards";
+import SlidingCards from "../components/ImageSlider";
+
 import image1 from '../assets/img1.jpeg';
 import image2 from '../assets/img2.jpeg';
 import image3 from '../assets/img3.jpeg';
@@ -49,11 +50,10 @@ function Clubs() {
       
       <SlidingCards images={ClubImages} />
     
-    
       {!showRegistrationForm || isSubmitted ? (
         <div className="text-center mt-14 mb-10">
           <button
-            className="bg-[#072e33] text-white btn btn-primary w-60 h-14 rounded-full text-xl font-bold  "
+            className="bg-[#072e33] text-white btn btn-primary w-60 h-14 rounded-full text-xl font-bold mt-6"
             onClick={handleRegistrationFormClick}>
             Registration Form
           </button>
