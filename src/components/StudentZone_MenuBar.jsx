@@ -3,17 +3,13 @@ import { Link } from 'react-router-dom';
 
 export default function MenuBar() {
   const [academicsDropdownOpen, setAcademicsDropdownOpen] = useState(false);
-  const [clubsDropdownOpen, setClubsDropdownOpen] = useState(false);
   const academicsRef = useRef(null);
-  const clubsRef = useRef(null);
 
   const handleDocumentClick = (e) => {
     if (academicsRef.current && !academicsRef.current.contains(e.target)) {
       setAcademicsDropdownOpen(false);
     }
-    if (clubsRef.current && !clubsRef.current.contains(e.target)) {
-      setClubsDropdownOpen(false);
-    }
+ 
   };
 
   useEffect(() => {
@@ -31,22 +27,13 @@ export default function MenuBar() {
     }
   };
 
-  const toggleClubsDropdown = () => {
-    setClubsDropdownOpen(!clubsDropdownOpen);
-    // Close the academics dropdown when opening clubs
-    if (academicsDropdownOpen) {
-      setAcademicsDropdownOpen(false);
-    }
-  };
 
   return (
     <>
-      <nav className=" px-4  justify-between items-center">
-        
-        <ul className="flex sm:space-x-4  ">
-          
+      <nav className="grid px-1 md:place-items-center">
+        <ul className="grid grid-cols-4 gap-1 md:gap-4">
           <li
-            className=" lg:space-x-80 lg:w-60 rounded-md text-3xl font-bold pt-2 bg-[#05161A] text-white cursor-pointer"
+            className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
             onClick={toggleAcademicsDropdown}
             ref={academicsRef}
           >
@@ -73,13 +60,13 @@ export default function MenuBar() {
               </div>
             )}
           </li>
-          <li className=" w-60  pt-2 bg-[#05161A] text-white rounded-md text-3xl font-bold">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/nss">NSS</CustomLink>
           </li>
-          <li className="w-60 pt-2  bg-[#05161A] text-white rounded-md text-3xl font-bold">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/ncc">NCC</CustomLink>
           </li>
-          <li className=" w-60 pt-2 h-14 bg-[#05161A] text-white rounded-md text-3xl font-bold">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/Clubs">Clubs</CustomLink>
           </li>
         </ul>
@@ -92,7 +79,6 @@ function CustomLink({ to, children, ...props }) {
   return (
     <Link to={to} {...props}>
       {children}
-    </Link>
-  );
+    </Link>
+  );
 }
-
