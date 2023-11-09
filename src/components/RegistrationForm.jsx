@@ -84,13 +84,14 @@ class RegistrationForm extends Component {
     }
     return (
       <div className="min-h-screen flex items-center justify-center ">
-        <div className="bg-[#0F969C] text-black p-8 rounded shadow-lg w-3/4">
-          <h2 className="text-2xl text-center font-bold mb-4">
+        <div className="bg-[#106b76] text-black p-8 rounded-lg shadow-lg w-3/4">
+          <h2 className="text-2xl text-white text-center font-bold mb-4">
             Registration Form
           </h2>
           <form onSubmit={this.handleSubmit} className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block  text-sm font-medium text-gray-600">
+              <label className="block  text-sm font-medium text-white
+">
                 Full Name:
               </label>
               <input
@@ -104,7 +105,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Father's Name:
               </label>
               <input
@@ -117,7 +119,7 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white">
                 Mother's Name:
               </label>
               <input
@@ -130,7 +132,7 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white">
                 Registration Number:
               </label>
               <input
@@ -143,7 +145,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 College Name:
               </label>
               <input
@@ -156,7 +159,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Mobile Number:
               </label>
               <input
@@ -169,7 +173,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Email:
               </label>
               <input
@@ -181,7 +186,8 @@ class RegistrationForm extends Component {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Choose Organization:
               </label>
               <select
@@ -199,7 +205,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Date of Birth:
               </label>
               <input
@@ -211,7 +218,8 @@ class RegistrationForm extends Component {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Blood Group:
               </label>
               <input
@@ -224,7 +232,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Address:
               </label>
               <textarea
@@ -236,7 +245,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Dominant State:
               </label>
               <input
@@ -249,7 +259,8 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-white
+">
                 Nationality:
               </label>
               <input
@@ -263,7 +274,7 @@ class RegistrationForm extends Component {
 
             <button
               type="submit"
-              className="col-span-2 bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600">
+              className="col-span-2 bg-[#0F969C] text-black font-semibold py-2 px-4 rounded hover:bg-blue-600">
               Submit
             </button>
           </form>
