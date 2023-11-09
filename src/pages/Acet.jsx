@@ -150,10 +150,10 @@ function  Acet(){
             CLUBS
           </p>
         
-    <div class="flex flex-row md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="flex flex-row md:grid-cols-3 lg:grid-cols-3 gap-5">
     <div class="max-w-xs bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-600 dark:border-gray-500">
         <div>
-            <img class=" rounded-t-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPaMD9wh_YkQWNdp-jbGcc4IMIr4TNLFw_rRdCaUTE8datj84UeKkG3YQUfIu2y7jzzU&usqp=CAU" alt="" />
+            <img class=" rounded-t-lg" src="https://media.istockphoto.com/id/1484758991/photo/hackathon-concept-the-meeting-at-the-white-office-table.webp?b=1&s=170667a&w=0&k=20&c=xooe7oIRS4fbyaDSWtEF90rSZ9M7k4Fl1qR08j8Bd7U=" alt="" />
         </div>
         <div class="p-3">
             <div>
@@ -167,7 +167,7 @@ function  Acet(){
 
     <div class="max-w-xs bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-600 dark:border-gray-500">
         <div>
-            <img class=" rounded-t-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPaMD9wh_YkQWNdp-jbGcc4IMIr4TNLFw_rRdCaUTE8datj84UeKkG3YQUfIu2y7jzzU&usqp=CAU" alt="" />
+            <img class=" rounded-t-lg" src="https://images.unsplash.com/photo-1599666505327-7758b44a9985?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nJTIwZm9yJTIwa2lkc3xlbnwwfHwwfHx8MA%3D%3D" alt="" />
         </div>
         <div class="p-3">
             <div>
@@ -180,7 +180,7 @@ function  Acet(){
     </div>
     <div class="max-w-xs bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-600 dark:border-gray-500">
         <div>
-            <img class=" rounded-t-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPaMD9wh_YkQWNdp-jbGcc4IMIr4TNLFw_rRdCaUTE8datj84UeKkG3YQUfIu2y7jzzU&usqp=CAU" alt="" />
+            <img class=" rounded-t-lg" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3VzdG9tZXIlMjByZXNlYXJjaHxlbnwwfHwwfHx8MA%3D%3D" alt="" />
         </div>
         <div class="p-3">
             <div>
