@@ -3,17 +3,13 @@ import { Link } from 'react-router-dom';
 
 export default function MenuBar() {
   const [academicsDropdownOpen, setAcademicsDropdownOpen] = useState(false);
-  const [clubsDropdownOpen, setClubsDropdownOpen] = useState(false);
   const academicsRef = useRef(null);
-  const clubsRef = useRef(null);
 
   const handleDocumentClick = (e) => {
     if (academicsRef.current && !academicsRef.current.contains(e.target)) {
       setAcademicsDropdownOpen(false);
     }
-    if (clubsRef.current && !clubsRef.current.contains(e.target)) {
-      setClubsDropdownOpen(false);
-    }
+ 
   };
 
   useEffect(() => {
@@ -31,13 +27,6 @@ export default function MenuBar() {
     }
   };
 
-  const toggleClubsDropdown = () => {
-    setClubsDropdownOpen(!clubsDropdownOpen);
-    // Close the academics dropdown when opening clubs
-    if (academicsDropdownOpen) {
-      setAcademicsDropdownOpen(false);
-    }
-  };
 
   return (
     <>
@@ -90,7 +79,6 @@ function CustomLink({ to, children, ...props }) {
   return (
     <Link to={to} {...props}>
       {children}
-    </Link>
-  );
+    </Link>
+  );
 }
-
