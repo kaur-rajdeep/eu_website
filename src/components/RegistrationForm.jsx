@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 const nssOptions = [
-  { value: 'NSS1', label: 'NSS 1' },
-  { value: 'NSS2', label: 'NSS 2' },
+  { value: "NSS1", label: "NCC" },
+  { value: "NSS2", label: "NSS" },
   // Add more NSS options as needed
 ];
 
 const clubsOptions = [
-  { value: 'club1', label: 'Club 1' },
-  { value: 'club2', label: 'Club 2' },
-  { value: 'club3', label: 'Club 3' },
-  { value: 'club4', label: 'Club 4' },
+  { value: "club1", label: "Club 1" },
+  { value: "club2", label: "Club 2" },
+  { value: "club3", label: "Club 3" },
+  { value: "club4", label: "Club 4" },
   // Add more club options as needed
 ];
 
@@ -18,20 +18,20 @@ class RegistrationForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fullName: '',
-      fatherName: '',
-      motherName: '',
-      registrationNumber: '',
-      collegeName: '',
-      mobileNumber: '',
-      email: '',
-      dateOfBirth: '',
-      bloodGroup: '',
-      address: '',
-      dominantState: '',
-      nationality: '',
-      organization: '', // Add organization field to state
-      selectedOption: '',
+      fullName: "",
+      fatherName: "",
+      motherName: "",
+      registrationNumber: "",
+      collegeName: "",
+      mobileNumber: "",
+      email: "",
+      dateOfBirth: "",
+      bloodGroup: "",
+      address: "",
+      dominantState: "",
+      nationality: "",
+      organization: "",
+      selectedOption: "",
     };
   }
 
@@ -42,7 +42,7 @@ class RegistrationForm extends Component {
 
   handleOrganizationChange = (e) => {
     const organization = e.target.value;
-    this.setState({ organization, selectedOption: '' });
+    this.setState({ organization, selectedOption: "" });
   };
 
   handleOptionChange = (e) => {
@@ -56,34 +56,43 @@ class RegistrationForm extends Component {
     console.log(this.state);
     // Reset the form after submission (if needed)
     this.setState({
-      fullName: '',
-      fatherName: '',
-      motherName: '',
-      registrationNumber: '',
-      collegeName: '',
-      mobileNumber: '',
-      email: '',
-      dateOfBirth: '',
-      bloodGroup: '',
-      address: '',
-      dominantState: '',
-      nationality: '',
-      organization: '',
-      selectedOption: '',
+      fullName: "",
+      fatherName: "",
+      motherName: "",
+      registrationNumber: "",
+      collegeName: "",
+      mobileNumber: "",
+      email: "",
+      dateOfBirth: "",
+      bloodGroup: "",
+      address: "",
+      dominantState: "",
+      nationality: "",
+      organization: "",
+      selectedOption: "",
     });
   };
 
   render() {
     const { organization, selectedOption } = this.state;
-    const options = organization === 'NSS' ? nssOptions : clubsOptions;
+    let options;
 
+    if (this.props.context === "Clubs") {
+      options = clubsOptions;
+    } else {
+      options = nssOptions;
+    }
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="bg-white p-8 rounded shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">Registration Form</h2>
-          <form onSubmit={this.handleSubmit} className="space-y-4">
+      <div className="min-h-screen flex items-center justify-center ">
+        <div className="bg-[#0F969C] text-black p-8 rounded shadow-lg w-3/4">
+          <h2 className="text-2xl text-center font-bold mb-4">
+            Registration Form
+          </h2>
+          <form onSubmit={this.handleSubmit} className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-600">Full Name:</label>
+              <label className="block  text-sm font-medium text-gray-600">
+                Full Name:
+              </label>
               <input
                 type="text"
                 name="fullName"
@@ -95,7 +104,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Father's Name:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Father's Name:
+              </label>
               <input
                 type="text"
                 name="fatherName"
@@ -106,7 +117,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Mother's Name:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Mother's Name:
+              </label>
               <input
                 type="text"
                 name="motherName"
@@ -117,7 +130,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Registration Number:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Registration Number:
+              </label>
               <input
                 type="text"
                 name="registrationNumber"
@@ -128,7 +143,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">College Name:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                College Name:
+              </label>
               <input
                 type="text"
                 name="collegeName"
@@ -139,7 +156,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Mobile Number:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Mobile Number:
+              </label>
               <input
                 type="tel"
                 name="mobileNumber"
@@ -150,7 +169,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Email:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Email:
+              </label>
               <input
                 type="email"
                 name="email"
@@ -159,42 +180,28 @@ class RegistrationForm extends Component {
                 className="block w-full px-4 py-2 border rounded focus:ring focus:ring-blue-200"
               />
             </div>
-
             <div>
-              <label className="block text-sm font-medium text-gray-600">Choose Organization:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Choose Organization:
+              </label>
               <select
                 name="organization"
                 value={organization}
                 onChange={this.handleOrganizationChange}
-                className="block w-full px-4 py-2 border rounded focus:ring focus:ring-blue-200"
-              >
+                className="block w-full px-4 py-2 border rounded focus:ring focus:ring-blue-200">
                 <option value="">Select Organization</option>
-                <option value="NCC">NCC</option>
-                <option value="NSS">NSS</option>
+                {options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
               </select>
             </div>
 
-            {organization && (
-              <div>
-                <label className="block text-sm font-medium text-gray-600">Select Option:</label>
-                <select
-                  name="selectedOption"
-                  value={selectedOption}
-                  onChange={this.handleOptionChange}
-                  className="block w-full px-4 py-2 border rounded focus:ring focus:ring-blue-200"
-                >
-                  <option value="">Select an option</option>
-                  {options.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            )}
-
             <div>
-              <label className="block text-sm font-medium text-gray-600">Date of Birth:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Date of Birth:
+              </label>
               <input
                 type="date"
                 name="dateOfBirth"
@@ -203,9 +210,10 @@ class RegistrationForm extends Component {
                 className="block w-full px-4 py-2 border rounded focus:ring focus:ring-blue-200"
               />
             </div>
-
             <div>
-              <label className="block text-sm font-medium text-gray-600">Blood Group:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Blood Group:
+              </label>
               <input
                 type="text"
                 name="bloodGroup"
@@ -216,7 +224,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Address:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Address:
+              </label>
               <textarea
                 name="address"
                 value={this.state.address}
@@ -226,7 +236,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Dominant State:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Dominant State:
+              </label>
               <input
                 type="text"
                 name="dominantState"
@@ -237,7 +249,9 @@ class RegistrationForm extends Component {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">Nationality:</label>
+              <label className="block text-sm font-medium text-gray-600">
+                Nationality:
+              </label>
               <input
                 type="text"
                 name="nationality"
@@ -247,7 +261,9 @@ class RegistrationForm extends Component {
               />
             </div>
 
-            <button type="submit" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover-bg-blue-600">
+            <button
+              type="submit"
+              className="col-span-2 bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600">
               Submit
             </button>
           </form>
