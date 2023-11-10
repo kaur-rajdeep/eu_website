@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SlidingCards = ({ images }) => {
+const NoticeBoard = ({ images }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -38,7 +38,7 @@ const SlidingCards = ({ images }) => {
   };
 
   return (
-    <Slider {...settings} className="mx-28 mt-5">
+    <Slider {...settings} className="mx-28 mt-5 ">
       {Array.isArray(images) && images.map((card, index) => (
         <div key={index} className="shadow-lg p-4">
           <img
@@ -54,4 +54,4 @@ const SlidingCards = ({ images }) => {
   );
 };
 
-export default SlidingCards;
+export default NoticeBoard;
