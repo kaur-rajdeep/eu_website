@@ -111,8 +111,7 @@ const Contact = () => {
 
 export default Contact;*/
 import React, { useState, useEffect } from 'react';
-
-
+import Slider from 'react-slick';
 const carouselImages = [
   'https://images.shiksha.com/mediadata/images/1623762631php42TSYI.jpeg',
   'https://eternaluniversity.edu.in/images/nss/1.jpg',
@@ -148,6 +147,96 @@ const cardsData = [
       "https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60=",
   },
 ];
+const OuterCard = ({ text, phone, email }) => {
+  const phoneNumbers = phone.split(', ');
+  return (
+    <div
+      className="shadow-[#294d61] shadow-inner p-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-110"
+      style={{
+        width: '350px',
+        height: '350px',
+        backgroundColor: '#fff',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+        margin: '10px 50px 20px 20px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <p style={{ marginBottom: '10px' }}>
+        {phoneNumbers.map((phoneNumber, index) => (
+          <span key={index} style={{ fontWeight: 'bold' }}>
+            {phoneNumber.trim()}
+            {index < phoneNumbers.length - 1 && ', '}
+          </span>
+        ))}
+      </p>
+      <p style={{ marginBottom: '130px' }}>
+        <a href={`mailto:${email}`} style={{ fontWeight: 'bold' }}>
+          {email}
+        </a>
+      </p>
+      <InnerCard text={text} />
+    </div>
+  );
+};
+
+// InnerCard component
+const InnerCard = ({ text }) => {
+  return (
+    <div
+      className="bg-blue-200 shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-110"
+      style={{
+        width: '220px',
+        height: '50px',
+        backgroundColor: '#c3dafe',
+        margin: '-300px 0.5px 0.5px 0.5px',
+      }}
+    >
+      {text}
+    </div>
+  );
+};
+
+// MapComponent component
+const MapComponent = () => {
+  return (
+    <div className="map-container" style={{ marginLeft: '20px' }}>
+      <iframe
+        title="Google Maps"
+        className="google-map"
+        width="400px" // Set the width to 100% (adjust it as needed)
+        height="400px" // Set the desired height
+        frameBorder="0"
+        style={{
+          border: 0,
+          borderRadius: '10px', // Add rounded edges (you can adjust the radius)
+        }}
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.744475779127!2d77.29435331510398!3d30.753678291673896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f71f089dc6a15%3A0x57f9fec43429fac6!2sEternal%20University%20Baru%20Sahib!5e0!3m2!1sen!2sin!4v1597320710176!5m2!1sen!2sin"
+        allowFullScreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  );
+};
+
+// AddressAndMap component
+const AddressAndMap = () => {
+  return (
+    <div className="color text-black text-center py-16 mt-[-50px] mt-8">
+      <h2 className="text-2xl font-bold mb-4 inline-block" style={{ marginLeft: '-20px' }}>
+        Address And Map
+      </h2>
+      <div className="inline-block" style={{ marginLeft: '40vw' }}>
+        <h2 className="text-2xl font-bold mb-4 ">Get In Touch</h2>
+      </div>
+      <MapComponent />
+    </div>
+  );
+};
+
+// Contact component
 const Contact = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -160,15 +249,20 @@ const Contact = () => {
       clearInterval(interval);
     };
   }, []);
+
   return (
-    <div className="mt-16 flex flex-col items-center">
-      {/* Carousel component */}
+    <div>
       <div className="h-[60vh] w-[100vw] relative overflow-hidden">
-        <img
-          src={carouselImages[currentIndex]}
-          alt={`carousel-${currentIndex}`}
-          className="h-full w-full object-cover"
-        />
+        <Slider>
+          {carouselImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`carousel-${index}`}
+              className="h-full w-full object-cover"
+            />
+          ))}
+        </Slider>
       </div>
 
       <h1 className="text-3xl font-extrabold mt-8 mb-4 p-4">
@@ -203,6 +297,26 @@ const Contact = () => {
           </div>
         ))}
       </div>
+
+      {/* Admission and Contact Text */}
+      <div className="mt-8 text-center">
+        <h2 className="text-3xl font-bold mb-4">Admission And Accounts</h2>
+        <div className="grid gap-4 justify-center md:flex md:flex-row">
+          <OuterCard
+            text="For Admission"
+            phone="+91-7833911763"
+            email="admissions@eternaluniversity.edu.in"
+          />
+          <OuterCard
+            text="For Accounts"
+            phone="+91-9805098725"
+            email="accounts@eternaluniversity.edu.in"
+          />
+        </div>
+      </div>
+
+      {/* Get In Touch Section */}
+      <AddressAndMap />
     </div>
   );
 };
