@@ -1,8 +1,8 @@
 import React from 'react';
+import Image1 from '../assets/get_in_touch/location_icon.png';
+import Image2 from '../assets/get_in_touch/telephone_icon.png';
+import Image3 from '../assets/get_in_touch/mail_icon.png';
 
-import Image1 from '../assets/location_icon.jpg';
-import Image2 from '../assets/telephone_icon.jpg';
-import Image3 from '../assets/mail_icon.jpg';
 
 function GetInTouch() {
   return (

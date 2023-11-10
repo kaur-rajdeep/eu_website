@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
+import MenuBar from "../components/StudentZone_MenuBar";
 import RegistrationForm from "../components/RegistrationForm";
 import Card from "../components/Card";
 // ... (other imports and constants)
@@ -39,6 +40,10 @@ function NSS() {
 
     <div>
       <Carousel images={images} />
+
+      <div className='mt-6 mb-6'>
+        <MenuBar/>
+      </div>
 
       {/* cards */}
 

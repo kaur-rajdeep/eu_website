@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
+import MenuBar from "../components/StudentZone_MenuBar";
 import RegistrationForm from "../components/RegistrationForm";
 import Card from "../components/Card"; // Import the Card component
 
@@ -34,6 +35,10 @@ function NCC() {
   return (
     <div>
       <Carousel images={images} />
+
+      <div className='mt-6 mb-6'>
+        <MenuBar/>
+      </div>
 
       <h1 className="text-center lg:text-5xl md:text-4xl text-3xl text-center lg:mt-6 mt-6 mb-6 font-[990]">
         NCC (National Cadet Corps)

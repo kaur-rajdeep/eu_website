@@ -1,22 +1,31 @@
 import React from 'react';
-
-import Image1 from '../assets/location_icon.jpg';
-import Image2 from '../assets/telephone_icon.jpg';
-import Image3 from '../assets/mail_icon.jpg';
+import Image1 from '../assets/getintouchicons/location_icon.png';
+import Image2 from '../assets/getintouchicons/telephone_icon.png';
+import Image3 from '../assets/getintouchicons/mail_icon.png';
 
 function GetInTouch() {
   return (
-    <div className="grid place-items-center p-5 text-2xl">
-      <div className="bg-white text-center text-3xl py-10 mb-4">Get in Touch</div>
-      <div className="flex items-center mb-10 gap-20">
-        {/* Image 1 */}
-        <img src={Image1} alt="Image 1" className="w-20 h-20" />
-        {/* Image 2 */}
-        <img src={Image2} alt="Image 2" className="w-20 h-20" />
-        {/* Image 3 */}
-        <img src={Image3} alt="Image 3" className="w-20 h-20" />
+    <div className="grid place-items-center p-2 text-2xl ">
+      <div className="bg-white text-center text-3xl py-10 mb-4">
+        <p className="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-12 mt-8 font-[990]">
+          Get in Touch
+        </p>
       </div>
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-white p-20 text-xl shadow-2xl w-70 m-auto ">
+      <div className="grid grid-cols-3 gap-1 mb-10 ">
+        <div className="flex flex-col items-center text-center lg:text-xl md:text-sm">
+          <img src={Image1} alt="Image 1" className="w-10 h-10 mb-2" />
+          <p>Baru Sahib, Distt, near Rajah, Himachal Pradesh 173101</p>
+        </div>
+        <div className="flex flex-col items-center text-center lg:text-xl md:text-sm">
+          <img src={Image2} alt="Image 2" className="w-10 h-10 mb-2" />
+          <p>+91-9816400624</p>
+        </div>
+        <div className="flex flex-col items-center text-center lg:text-xl md:text-sm">
+          <img src={Image3} alt="Image 3" className="w-10 h-10 mb-2" />
+          <p>contact@eternaluniversity.edu.in</p>
+        </div>
+      </div>
+      <form className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-white p-12 text-xl shadow-2xl w-70 m-auto">
         <div className="flex flex-col items-center gap-8">
           <input
             type="text"
@@ -37,7 +46,7 @@ function GetInTouch() {
             className="w-full rounded-3xl p-4 border border-black rounded"
           />
         </div>
-        <div >
+        <div>
           <textarea
             id="message"
             placeholder="Enter your message"
@@ -46,7 +55,7 @@ function GetInTouch() {
         </div>
         <button
           type="submit"
-          className="mt-20 text-center text-white p-4 text-2xl bg-black rounded-full cursor-pointer self-center col-span-2 md:col-auto"
+          className="mt-4 text-center text-white p-2 text-2xl bg-black rounded-full cursor-pointer col-span-2 mx-40"
         >
           Submit
         </button>
@@ -56,3 +65,4 @@ function GetInTouch() {
 }
 
 export default GetInTouch;
+
