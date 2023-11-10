@@ -3,6 +3,7 @@ import Carousel from "../components/Carousel";
 import "./Acet.css";
 import FacultyCard from "../components/FacultyCard";
 import AcetClubs from "../components/AcetClubs";
+import QueryBox from "../components/QueryBox";
 function Acet() {
   const images = [
     "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
@@ -93,6 +94,9 @@ function Acet() {
 
       {/* --------------------------------CLUBS---------------------------------------------------------- */}
       <AcetClubs />
+
+      {/* ----------------------------------QUERY BOX--------------------------------------------------- */}
+      <QueryBox />
     </>
   );
 }
