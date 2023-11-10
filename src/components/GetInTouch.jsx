@@ -7,7 +7,9 @@ import Image3 from '../assets/mail_icon.jpg';
 function GetInTouch() {
   return (
     <div className="grid place-items-center p-5 text-2xl">
-      <div className="bg-white text-center text-3xl py-10 mb-4">Get in Touch</div>
+      <div className="bg-white text-center text-3xl py-10 mb-4">
+        Get in Touch
+      </div>
       <div className="flex items-center mb-10 gap-20">
         {/* Image 1 */}
         <img src={Image1} alt="Image 1" className="w-20 h-20" />
@@ -22,26 +24,26 @@ function GetInTouch() {
             type="text"
             id="name"
             placeholder="Enter your Name"
-            className="w-full rounded-3xl p-4 border border-black rounded"
+            className="w-full rounded-3xl p-4 border border-black"
           />
           <input
             type="email"
             id="email"
             placeholder="Enter your Email"
-            className="w-full  rounded-3xl p-4 border border-black rounded"
+            className="w-full  rounded-3xl p-4 border border-black"
           />
           <input
             type="tel"
             id="contactNumber"
             placeholder="Enter your Contact Number"
-            className="w-full rounded-3xl p-4 border border-black rounded"
+            className="w-full rounded-3xl p-4 border border-black"
           />
         </div>
-        <div >
+        <div>
           <textarea
             id="message"
             placeholder="Enter your message"
-            className="w-full  rounded-3xl h-64 p-4 border border-black rounded box-border"
+            className="w-full  rounded-3xl h-64 p-4 border border-black box-border"
           />
         </div>
         <button
