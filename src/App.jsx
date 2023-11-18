@@ -13,11 +13,13 @@ import Faculty from "./pages/Faculty";
 import NCC from './pages/NCC';
 import NSS from './pages/NSS';
 import Clubs from './pages/Clubs';
+import Socailmedia from "./components/Socailmedia";
 
 function App() {
   return (
     <>
       <Navbar />
+      <Socailmedia />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -26,10 +28,8 @@ function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/NCC" element={<NCC />} />
-        <Route path='/NSS' element={<NSS />} />
-        <Route path='/Clubs' element={<Clubs />} />
-
-
+        <Route path="/NSS" element={<NSS />} />
+        <Route path="/Clubs" element={<Clubs />} />
       </Routes>
       <Footer />
     </>

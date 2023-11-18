@@ -24,6 +24,7 @@ function Home() {
   const cards = college_card_data.map((item) => {
     return <Colleges_Card key={item.id} {...item} />;
   });
+  
   return (
     <>
       {/* IMAGES CAROUSEL */}
@@ -116,7 +117,7 @@ function Home() {
       </div>
 
       {/* // GET IN TOUCH */}
-      <div>
+      <div id="get">
         <GetInTouch />
       </div>
     </>

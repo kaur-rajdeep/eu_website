@@ -31,3 +31,7 @@ red for buttons: bg-[#f93a54] hover:bg-[#e3142c] */
 /* orange: #D7793B */
 /* brown:#945125
 skin:#F8D7C2 */
+
+.sticky-navbar{
+   background-color: rgba(255, 255, 255, 0.522);
+}

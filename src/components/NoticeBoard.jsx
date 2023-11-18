@@ -31,11 +31,14 @@ const NoticeBoard = ({ images }) => {
   };
 
   return (
-    <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-28 mt-5">
+    <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-28 mt-5 boder-2">
       <Slider {...settings} className="mx-auto">
         {Array.isArray(images) &&
           images.map((card, index) => (
-            <div key={index} className="shadow-lg p-4 border-2 border-black rounded-lg">
+            <div
+              key={index}
+              className="shadow-lg p-4 border-2 border-black rounded-lg"
+            >
               <img
                 src={card.imageUrl}
                 alt={`Image ${index + 1}`}
