@@ -42,21 +42,19 @@ export default function MenuBar() {
             {academicsDropdownOpen && (
               <div className="dropdown-content backdrop-blur-md bg-black bg-opacity-40 text-white sm:font-normal lg:text-xl  mt-6 w-[250px] rounded-md border-2">
                 <li className="p-2 ">
-                  <CustomLink to="/academics/syllabus">Syllabus</CustomLink>
+                  <CustomLink to="/syllabus">Syllabus</CustomLink>
                 </li>
                 <li className="p-2 ">
-                  <CustomLink to="/academics/question-paper">
-                    Question Paper
-                  </CustomLink>
+                  <CustomLink to="/question-paper">Question Paper</CustomLink>
                 </li>
                 <li className="p-2 ">
-                  <CustomLink to="/academics/timetable">Timetable</CustomLink>
+                  <CustomLink to="/timetable">Timetable</CustomLink>
                 </li>
                 <li className="p-2">
-                  <CustomLink to="/academics/datesheet">Datesheet</CustomLink>
+                  <CustomLink to="/datesheet">Datesheet</CustomLink>
                 </li>
                 <li className="p-2">
-                  <CustomLink to="/academics/result">Result</CustomLink>
+                  <CustomLink to="/result">Result</CustomLink>
                 </li>
               </div>
             )}

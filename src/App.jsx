@@ -14,6 +14,7 @@ import NCC from './pages/NCC';
 import NSS from './pages/NSS';
 import Clubs from './pages/Clubs';
 import Socailmedia from "./components/Socailmedia";
+import Syllabus from "./pages/Syllabus";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/NCC" element={<NCC />} />
         <Route path="/NSS" element={<NSS />} />
         <Route path="/Clubs" element={<Clubs />} />
+        <Route path="/syllabus" element={<Syllabus />} />
       </Routes>
       <Footer />
     </>
