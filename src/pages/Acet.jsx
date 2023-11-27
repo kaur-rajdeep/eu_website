@@ -4,6 +4,7 @@ import "./Acet.css";
 import FacultyCard from "../components/FacultyCard";
 import AcetClubs from "../components/AcetClubs";
 import QueryBox from "../components/QueryBox";
+import { Link } from "react-router-dom";
 function Acet() {
   const images = [
     "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
@@ -58,12 +59,12 @@ function Acet() {
               <div>
                 <h5 class="mb-2 text-xl font-extrabold text-center">BTECH</h5>
               </div>
-              <a
-                href="#"
+              <Link
+                to="/btech"
                 class="p-2 text-sm font-medium text-center text-white  bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none"
               >
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -79,12 +80,12 @@ function Acet() {
               <div>
                 <h5 class="mb-2 text-xl font-extrabold text-center">MTECH</h5>
               </div>
-              <a
-                href="#"
+              <Link
+                to="/mtech"
                 class="p-2 text-sm font-medium text-center text-white bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none "
               >
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
         </div>

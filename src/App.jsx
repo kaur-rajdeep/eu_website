@@ -15,6 +15,13 @@ import NSS from './pages/NSS';
 import Clubs from './pages/Clubs';
 import Socailmedia from "./components/Socailmedia";
 import Syllabus from "./pages/Syllabus";
+import Question from "./pages/Question";
+import Timetable from "./pages/Timetable";
+import Datesheet from "./pages/Datesheet";
+import Result from "./pages/Result";
+import Btech from "./pages/Courses/Btech";
+import Mtech from "./pages/Courses/Mtech";
+
 
 function App() {
   return (
@@ -32,6 +39,12 @@ function App() {
         <Route path="/NSS" element={<NSS />} />
         <Route path="/Clubs" element={<Clubs />} />
         <Route path="/syllabus" element={<Syllabus />} />
+        <Route path="/question-paper" element={<Question />} />
+        <Route path="/timetable" element={<Timetable />} />
+        <Route path="/datesheet" element={<Datesheet />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/btech" element={<Btech />} />
+        <Route path="/mtech" element={<Mtech />} />
       </Routes>
       <Footer />
     </>
