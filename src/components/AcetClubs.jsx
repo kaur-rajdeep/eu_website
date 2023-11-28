@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AcetClubs = () => {
   const clubsData = [
@@ -29,8 +30,7 @@ const AcetClubs = () => {
         {clubsData.map((club, index) => (
           <div
             key={index}
-            className="rounded-lg m-2 lg:w-[80%] border-2 border-[#294d61] bg-transparent p-4"
-          >
+            className="rounded-lg m-2 lg:w-[80%] border-2 border-[#294d61] bg-transparent p-4">
             <div>
               <img className="rounded-t-lg" src={club.imageSrc} alt="" />
             </div>
@@ -40,12 +40,11 @@ const AcetClubs = () => {
                   {club.name}
                 </h5>
               </div>
-              <a
-                href="#"
-                className="p-2 text-sm font-medium text-center text-white  bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none"
-              >
+              <Link
+                to={`/ACET_CLUBS`} // Use a unique identifier for each club, e.g., the club name
+                className="p-2 text-sm font-medium text-center text-white  bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none">
                 Know more
-              </a>
+              </Link>
             </div>
           </div>
         ))}

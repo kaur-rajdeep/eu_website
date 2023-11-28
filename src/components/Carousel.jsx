@@ -27,7 +27,7 @@ const Carousel = ({ images }) => {
               left: `${
                 ((index - currentIndex + images.length) % images.length) * 100
               }%`,
-              transform: `translateX(0)`,
+              
             }}
           />
         ))}
