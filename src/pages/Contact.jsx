@@ -146,6 +146,14 @@ const cardsData = [
     image:
       "https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60=",
   },
+  {
+    description: "Registrar Office",
+    contact: "+91-9805098718",
+    email: "registrar@eternaluniversity.edu.in ",
+    name: " Registar",
+    image:
+      "https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60=",
+  },
 ];
 const OuterCard = ({ text, phone, email }) => {
   const phoneNumbers = phone.split(', ');
@@ -202,13 +210,13 @@ const InnerCard = ({ text }) => {
 // MapComponent component
 const MapComponent = () => {
   return (
-    <div className="map-container" style={{ marginLeft: '20px' }}>
+    <div className="map-container" style={{ marginLeft: '0px' }}>
       <iframe
         title="Google Maps"
         className="google-map"
-        width="400px" // Set the width to 100% (adjust it as needed)
-        height="400px" // Set the desired height
-        frameBorder="0"
+        width="450px" // Set the width to 100% (adjust it as needed)
+        height="450px" // Set the desired height
+
         style={{
           border: 0,
           borderRadius: '10px', // Add rounded edges (you can adjust the radius)
@@ -236,7 +244,7 @@ const AddressAndMap = () => {
   );
 };
 
-// Contact component
+
 const Contact = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
