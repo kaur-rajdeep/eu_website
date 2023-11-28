@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
+
 export default function MenuBar() {
   const [academicsDropdownOpen, setAcademicsDropdownOpen] = useState(false);
   const academicsRef = useRef(null);
@@ -33,7 +34,7 @@ export default function MenuBar() {
       <nav className="grid px-1 md:place-items-center">
         <ul className="grid grid-cols-4 gap-1 md:gap-4">
           <li
-            className="rounded-md md:text-2xl lg:max-h-[8vh] md:max-h-[5vh] max-h-[6vh] text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
+            className="rounded-lg md:text-2xl lg:max-h-[8vh] md:w-[20vw]   max-h-[8vh] text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer "
             onClick={toggleAcademicsDropdown}
             ref={academicsRef}
           >
@@ -41,32 +42,30 @@ export default function MenuBar() {
             {academicsDropdownOpen && (
               <div className="dropdown-content backdrop-blur-md bg-black bg-opacity-40 text-white sm:font-normal lg:text-xl  mt-6 w-[250px] rounded-md border-2">
                 <li className="p-2 ">
-                  <CustomLink to="/academics/syllabus">Syllabus</CustomLink>
+                  <CustomLink to="/syllabus">Syllabus</CustomLink>
                 </li>
                 <li className="p-2 ">
-                  <CustomLink to="/academics/question-paper">
-                    Question Paper
-                  </CustomLink>
+                  <CustomLink to="/question-paper">Question Paper</CustomLink>
                 </li>
                 <li className="p-2 ">
-                  <CustomLink to="/academics/timetable">Timetable</CustomLink>
+                  <CustomLink to="/timetable">Timetable</CustomLink>
                 </li>
                 <li className="p-2">
-                  <CustomLink to="/academics/datesheet">Datesheet</CustomLink>
+                  <CustomLink to="/datesheet">Datesheet</CustomLink>
                 </li>
                 <li className="p-2">
-                  <CustomLink to="/academics/result">Result</CustomLink>
+                  <CustomLink to="/result">Result</CustomLink>
                 </li>
               </div>
             )}
           </li>
-          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-lg md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/nss">NSS</CustomLink>
           </li>
-          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-lg md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/ncc">NCC</CustomLink>
           </li>
-          <li className="md:w-[20vw] lg:w-[15vw] rounded-md md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
+          <li className="md:w-[20vw] lg:w-[15vw] rounded-lg md:text-2xl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/Clubs">Clubs</CustomLink>
           </li>
         </ul>

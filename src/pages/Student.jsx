@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
 import MenuBar from '../components/StudentZone_MenuBar';
+import NoticeBoard from '../components/NoticeBoard';
+import StudentZoneData from '../store/Student_Zone_Data';
 
 const images = [
   'https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg',
@@ -40,7 +42,7 @@ const Student = () => {
         </p>
       </div>
 
-      
+      <NoticeBoard images={StudentZoneData} />
 
     </div>
     

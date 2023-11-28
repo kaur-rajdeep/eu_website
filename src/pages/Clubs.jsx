@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
+import MenuBar from "../components/StudentZone_MenuBar";
 import RegistrationForm from "../components/RegistrationForm";
 import ClubsData from "../store/Clubs_Image_Card_Data";
-import SlidingCards from "../components/NoticeBoard";
-
+import NoticeBoard from "../components/NoticeBoard";
 const images = [
     "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
     "https://eternaluniversity.edu.in/images/activity/AGY11657703203EducationalVisit.jpg",
@@ -29,6 +29,10 @@ function Clubs() {
   return (
     <div>
       <Carousel images={images} />
+
+      <div className='mt-6 mb-6'>
+        <MenuBar/>
+      </div>
       
       <div className="h-[50vh] grid justify-center bg-[#072e33] text-white">
         <p className="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-12 mt-16 font-[990]">
@@ -39,7 +43,7 @@ function Clubs() {
         </p>
       </div>
       
-      <SlidingCards images={ClubsData} />
+      <NoticeBoard images={ClubsData} />
     
       {!showRegistrationForm || isSubmitted ? (
         <div className="text-center mt-10 mb-10">
