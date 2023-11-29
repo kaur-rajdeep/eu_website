@@ -22,6 +22,8 @@ import Result from "./pages/Result";
 import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
 
+import RegistrationForm from './components/RegistrationForm';
+
 
 function App() {
   return (
@@ -45,6 +47,9 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/btech" element={<Btech />} />
         <Route path="/mtech" element={<Mtech />} />
+        <Route path="/register" element={<RegistrationForm context="Clubs" />} />
+        
+
       </Routes>
       <Footer />
     </>
