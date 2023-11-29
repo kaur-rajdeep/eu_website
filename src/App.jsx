@@ -21,7 +21,13 @@ import Datesheet from "./pages/Datesheet";
 import Result from "./pages/Result";
 import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
+<<<<<<< HEAD
 import ACET_CLUBS from './pages/Courses/ACET_CLUBS';
+=======
+
+import RegistrationForm from './components/RegistrationForm';
+
+>>>>>>> 62e8296cd7a8dcbbe88295bbdaa8bb812df4a7f5
 
 function App() {
   return (
@@ -45,7 +51,12 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/btech" element={<Btech />} />
         <Route path="/mtech" element={<Mtech />} />
+<<<<<<< HEAD
         <Route path="/ACET_CLUBS" element={<ACET_CLUBS/>} />
+=======
+        <Route path="/register" element={<RegistrationForm context="Clubs" />} />
+        
+>>>>>>> 62e8296cd7a8dcbbe88295bbdaa8bb812df4a7f5
 
       </Routes>
       <Footer />
