@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Student from "./pages/Student";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
 import Faculty from "./pages/Faculty";
 import NCC from './pages/NCC';
 import NSS from './pages/NSS';
@@ -23,6 +22,13 @@ import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
 import ACET_CLUBS from './pages/Courses/ACET_CLUBS';
 import RegistrationForm from './components/RegistrationForm';
+import UniversityManagement from './pages/About us/UniversityManagement';
+import AnualReports from './pages/About us/AnualReport';
+import MinutesOfMeeting from './pages/About us/MinutesOfMeeting';
+import ViceChancellor from './pages/About us/ViceChancellor';
+import ProViceChancellor from './pages/About us/ProViceChancellor';
+import FacultyList from './pages/About us/FacultyList';
+import Recognition from './pages/About us/Recognition';
 
 
 function App() {
@@ -32,7 +38,13 @@ function App() {
       <Socailmedia />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/UniversityManagement" element={<UniversityManagement />} />
+        <Route path="/AnualReport" element={<AnualReports />} />
+        <Route path="/MinutesOfMeeting" element={<MinutesOfMeeting />} />
+        <Route path="/ViceChancellor" element={<ViceChancellor />} />
+        <Route path="/ProViceChancellor" element={<ProViceChancellor />} />
+        <Route path="/FacultyList" element={<FacultyList />} />
+        <Route path="/Recognition" element={<Recognition />} />
         <Route path="/acet" element={<Acet />} />
         <Route path="/students" element={<Student />} />
         <Route path="/faculty" element={<Faculty />} />

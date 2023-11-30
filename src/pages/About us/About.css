@@ -1,0 +1,49 @@
+/* App.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* ExpandableMenuItem.css */
+  .expandable-menu-item {
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #072e33;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #072e33;
+    align-items: center;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .expand-button {
+    background-color: white;
+    padding: 5px 20px;
+    cursor: pointer black;
+    font-size: 20px;
+  }
+  
+  .expandable-menu-item.expanded {
+    max-height: 800px; 
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }

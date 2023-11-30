@@ -2,18 +2,7 @@ export default [
   {
     id: 1,
     title: "Btech Semester 1",
-    subjects: [
-      {
-        key: "English",
-        value:
-          "https://th.bing.com/th/id/OIP.HxV79tFMPfBAIo0BBF-sOgHaEy?rs=1&pid=ImgDetMain",
-      },
-      {
-        key: "Maths",
-        value:
-          "https://th.bing.com/th/id/OIP.HxV79tFMPfBAIo0BBF-sOgHaEy?rs=1&pid=ImgDetMain",
-      },
-    ],
+    pdf: "link",
   },
   {
     id: 2,
