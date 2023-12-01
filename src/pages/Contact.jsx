@@ -107,31 +107,32 @@ const MapComponent = () => {
 
 const GetInTouchComponent = () => {
   return (
-    <div className="border-2 p-6 shadow-md lg:m-12 mt-[-80px] mt-8" style={{ width: '100%', marginLeft: '-30px' }}>
-      <br /> {/* Add a break tag here */}
-      <div className="grid place-items-center p-2 text-2xl">
-        <div className="bg-white text-center text-3xl mb-4">
-          <p className="lg:text-5xl md:text-4xl text-3xl text-center lg:mt-12 font-[990]">
+    <>
+          <p className="text-3xl text-center m-2 font-[990]">
             Get in Touch
           </p>
+    <div className="border-2 mr-4 shadow-md mt-8 mb-4" >
+      <br /> {/* Add a break tag here */}
+      <div className="grid place-items-center text-2xl ">
+        <div className="bg-white text-center text-3xl mb-4">
         </div>
     
 
-        <div className="grid md:grid-cols-3 gap-1 mb-10">
-          <div className="flex flex-col items-center text-center lg:text-xl md:text-sm text-xs">
+        <div className="grid gap-1 mb-10">
+          <div className="flex flex-col items-center text-center text-sm">
             <img src={Image1} alt="Image 1" className="w-8 h-8 mb-2" />
             <p>Baru Sahib, Distt, near Rajah, Himachal Pradesh 173101</p>
           </div>
-          <div className="flex flex-col items-center text-center lg:text-xl md:text-sm text-xs">
+          <div className="flex flex-col items-center text-center text-sm">
             <img src={Image2} alt="Image 2" className="w-8 h-8 mb-2" />
             <p>+91-9816400624</p>
           </div>
-          <div className="flex flex-col items-center text-center lg:text-xl md:text-sm text-xs">
+          <div className="flex flex-col items-center text-center text-sm">
             <img src={Image3} alt="Image 3" className="w-8 h-8 mb-2" />
             <p>contact@eternaluniversity.edu.in</p>
           </div>
         </div>
-        <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-white p-8 text-lg m-auto">
+        <form className="grid gap-4 bg-white text-lg m-auto">
           <div className="flex flex-col items-center gap-4 lg:w-full">
             <input
               type="text"
@@ -154,7 +155,7 @@ const GetInTouchComponent = () => {
               className="w-full md:w-3/4 lg:w-full h-10 rounded-full p-2 border-2 border-black font-bold"
             />
           </div>
-          <div className="grid place-items-center -ml-16 md:ml-0 lg:w-full">
+          <div className="grid place-items-center lg:w-full">
             <textarea
               id="message"
               placeholder="Your message"
@@ -164,7 +165,7 @@ const GetInTouchComponent = () => {
           <div className="grid justify-start -ml-40 md:-ml-0 lg:w-full">
             <button
               type="submit"
-              className="mt-4 text-center text-white p-2 text-lg bg-black rounded-full cursor-pointer col-span-2 mx-40 w-[200px]"
+              className="mt-2 text-center text-white p-2 text-lg bg-black rounded-full cursor-pointer col-span-2 mx-40 w-[200px] mb-2"
             >
               Submit
             </button>
@@ -172,6 +173,7 @@ const GetInTouchComponent = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
