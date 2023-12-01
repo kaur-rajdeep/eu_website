@@ -20,13 +20,11 @@ import Datesheet from "./pages/Datesheet";
 import Result from "./pages/Result";
 import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
-<<<<<<< HEAD
 import Post from "./pages/Post";
 
 import RegistrationForm from './components/RegistrationForm';
 import Register from './components/Register';
 import Login from './components/Login';
-=======
 import ACET_CLUBS from './pages/Courses/ACET_CLUBS';
 import RegistrationForm from './components/RegistrationForm';
 import UniversityManagement from './pages/About us/UniversityManagement';
@@ -37,7 +35,6 @@ import ProViceChancellor from './pages/About us/ProViceChancellor';
 import FacultyList from './pages/About us/FacultyList';
 import Recognition from './pages/About us/Recognition';
 
->>>>>>> b25801ec210e48c6dcd4fc4a0a0fceb50229c904
 
 function App() {
   return (
@@ -67,16 +64,13 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/btech" element={<Btech />} />
         <Route path="/mtech" element={<Mtech />} />
-<<<<<<< HEAD
         <Route path="/Register" element={<Register  />} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/Post" element={<Post/>} />
-=======
         <Route path="/ACET_CLUBS" element={<ACET_CLUBS/>} />
         <Route path="/register" element={<RegistrationForm context="Clubs" />} />
         
 
->>>>>>> b25801ec210e48c6dcd4fc4a0a0fceb50229c904
       </Routes>
       <Footer />
     </>
