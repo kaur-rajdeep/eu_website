@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Carousel from "../components/Carousel";
 import MenuBar from "../components/StudentZone_MenuBar";
 import RegistrationForm from "../components/RegistrationForm";
-import Card from "../components/Card"; // Import the Card component
-
+import Card from "../components/Card";
+import cardData from "../store/NCC_DATA";
 const images = [
   "https://eternaluniversity.edu.in/images/activity/AGY01657703203EducationalVisit.jpg",
   "https://eternaluniversity.edu.in/images/activity/AGY11657703203EducationalVisit.jpg",
@@ -11,7 +11,6 @@ const images = [
   "https://eternaluniversity.edu.in/images/activity/AMI1660805268CollegeActivity.jpg",
   "https://eternaluniversity.edu.in/images/event/MI1660799332Camp.jpg",
 ];
-
 const cardStyles = {
   height: "200px",
   marginBottom: "20px",
@@ -37,7 +36,7 @@ function NCC() {
       <Carousel images={images} />
 
       <div className='mt-6 mb-6'>
-        <MenuBar/>
+        <MenuBar />
       </div>
 
       <h1 className="text-center lg:text-5xl md:text-4xl text-3xl text-center lg:mt-6 mt-6 mb-6 font-[990]">
@@ -54,74 +53,22 @@ function NCC() {
       </p>
 
       <div className="text-white grid lg:grid-cols-3 md:grid-cols-2 gap-4 place-items-center">
-        <Card
-          title="Certificates:"
-          content={
-            <p>
-              C-Certificate is the highest recognition. B-Certificate is the
-              initial qualification for senior NCC cadets.
-            </p>
-          }
-          cardStyles={cardStyles}
-        />
-
-        <Card
-          title="Activities:"
-          content={
-            <p>
-              Focus on instilling discipline and fostering healthy competition.
-              Provides leadership, military, and physical training to over 13
-              lakh youth.
-            </p>
-          }
-          cardStyles={cardStyles}
-        />
-
-        <Card
-          title="Benefits:"
-          content={
-            <p>
-              Incentives for NCC certificate holders in recruitment. Special
-              Entry Scheme for graduates. Exemption from CDS examination.
-            </p>
-          }
-          cardStyles={cardStyles}
-        />
-
-        <Card
-          title="NCC Activities:"
-          content={
-            <p>
-              NCC activities aim to instill discipline, foster healthy
-              competition, and create prospective officers for the Armed Forces.
-              The organization provides training in Leadership, Discipline,
-              Integration, Adventure, Military, Physical, and Community
-              Development to over 13 lakh youth.
-            </p>
-          }
-          cardStyles={cardStyles}
-        />
-
-        <Card
-          title="NCC Benefits @ Eternal University:"
-          content={
-            <p>
-              The Combined Annual Training Camp for NCC cadets was conducted by
-              1 HP Girls Bn Solan at Baru Sahib, Himachal Pradesh, from 16 to 23
-              November 2017. Over 420 cadets from different regions of Himachal
-              Pradesh actively participated in various training sessions and
-              competitions.
-            </p>
-          }
-          cardStyles={cardStyles}
-        />
+        {cardData.map((card, index) => (
+          <Card
+            key={index}
+            title={card.title}
+            content={<p>{card.content}</p>}
+            cardStyles={cardStyles}
+          />
+        ))}
       </div>
 
       {!showRegistrationForm || isSubmitted ? (
         <div className="text-center mt-14 mb-10 ">
           <button
             className="bg-[#072e33] text-white btn btn-primary w-60 h-14 rounded-full text-xl font-bold pt-2"
-            onClick={handleRegistrationFormClick}>
+            onClick={handleRegistrationFormClick}
+          >
             Registration Form
           </button>
         </div>
