@@ -21,9 +21,11 @@ import Datesheet from "./pages/Datesheet";
 import Result from "./pages/Result";
 import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
+import Post from "./pages/Post";
 
 import RegistrationForm from './components/RegistrationForm';
-
+import Register from './components/Register';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -47,9 +49,9 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/btech" element={<Btech />} />
         <Route path="/mtech" element={<Mtech />} />
-        <Route path="/register" element={<RegistrationForm context="Clubs" />} />
-        
-
+        <Route path="/Register" element={<Register  />} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Post" element={<Post/>} />
       </Routes>
       <Footer />
     </>
