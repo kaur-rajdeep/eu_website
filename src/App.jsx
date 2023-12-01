@@ -20,6 +20,9 @@ import Datesheet from "./pages/Datesheet";
 import Result from "./pages/Result";
 import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
+import Post from "./pages/Post";
+import Register from './components/Register';
+import Login from './components/Login';
 import ACET_CLUBS from './pages/Courses/ACET_CLUBS';
 import RegistrationForm from './components/RegistrationForm';
 import UniversityManagement from './pages/About us/UniversityManagement';
@@ -59,6 +62,9 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/btech" element={<Btech />} />
         <Route path="/mtech" element={<Mtech />} />
+        <Route path="/Register" element={<Register  />} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Post" element={<Post/>} />
         <Route path="/ACET_CLUBS" element={<ACET_CLUBS/>} />
         <Route path="/register" element={<RegistrationForm context="Clubs" />} />
         

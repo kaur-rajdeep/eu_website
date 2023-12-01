@@ -1,8 +1,6 @@
 import React from "react";
-
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import RegistrationForm from "../components/RegistrationForm";
-import Card from "../components/Card";
+
 import Carousel from "../components/Carousel";
 
   const images = [
@@ -39,7 +37,7 @@ function Faculty() {
                 <h5 className="mb-2 text-xl font-extrabold text-center">Job Applicant</h5>
               </div>
               <Link
-                to="/register"
+                to="/Post"
                 className="p-2 text-sm font-medium text-center text-white bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none"
               >
                 Registration Form
@@ -60,10 +58,10 @@ function Faculty() {
                 <h5 className="mb-2 text-xl font-extrabold text-center">Company seeking employees</h5>
               </div>
               <Link
-                to="/mtech"
+                to="/Post"
                 className="p-2 text-sm font-medium text-center text-white bg-[#05161A] rounded-lg hover:bg-[#294d61] focus:outline-none"
               >
-                Read more
+                Job Provide
               </Link>
             </div>
           </div>
