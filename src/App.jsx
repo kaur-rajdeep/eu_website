@@ -21,8 +21,6 @@ import Result from "./pages/Result";
 import Btech from "./pages/Courses/Btech";
 import Mtech from "./pages/Courses/Mtech";
 import Post from "./pages/Post";
-
-import RegistrationForm from './components/RegistrationForm';
 import Register from './components/Register';
 import Login from './components/Login';
 import ACET_CLUBS from './pages/Courses/ACET_CLUBS';
