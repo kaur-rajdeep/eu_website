@@ -65,6 +65,7 @@ function App() {
         <Route path="/Register" element={<Register  />} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/Post" element={<Post/>} />
+        <Route path="/add-job" element={<Login/>} />
         <Route path="/ACET_CLUBS" element={<ACET_CLUBS/>} />
         <Route path="/register" element={<RegistrationForm context="Clubs" />} />
         
