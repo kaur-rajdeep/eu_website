@@ -3,7 +3,7 @@ import Carousel from "../components/Carousel";
 import CardData from "../components/CardData";
 import AddressAndMap from "../components/AddressAndMap";
 import GetInC from "../components/GetInC";
-import Map from "../components/Map";
+
 import AccountCard from '../components/AccountCard';
 
 const images = [
@@ -37,7 +37,7 @@ const ContactsCardData = [
     image: "https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60=",
   },
 ];
-
+//Data Declarations
 const AccountsCardData=[
   {
     text: "For Admission",
@@ -52,7 +52,7 @@ const AccountsCardData=[
     name: "Accounts",
   }
 ]
-
+//Functional components
 const Contact = () => {
   return (
     <div>

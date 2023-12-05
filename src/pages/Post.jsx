@@ -108,19 +108,17 @@
 // };
 
 // export default JobPostPage;
+
+
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-
+//componnet function
 const JobPostPage = () => {
-  const [isAddJobOpen, setAddJobOpen] = useState(false);
-
-  const toggleAddJobDropdown = () => {
-    setAddJobOpen(!isAddJobOpen);
-  };
-
+ 
   const JobCard = ({ job }) => {
-    const applyLink = job.applyLink;
-
+    const applyLink = job.applyLink;//job object
+ //component renders a job card
     return (
       <div className="flex flex-col mb-8 sm:mb-0 w-full sm:w-1/2 md:w-1/3 p-2">
         <div
@@ -129,11 +127,13 @@ const JobPostPage = () => {
         >
           <div className="mb-4">
             <h1 className="text-2xl font-bold mb-1 mt-8">{job.jobTitle}</h1>
+           
             <p className="mb-2 mt-4 text-left">{job.jobDescription}</p>
 
             <div className="mb-2 mt-4 text-left">
               <div className="mb-1 mt-12">
-                <strong>Location :</strong> {job.location}
+                <strong>Location :</strong>
+                
               </div>
               <div className="mb-1">
                 <strong>Experience :</strong> {job.experience}
