@@ -32,6 +32,10 @@ import ViceChancellor from './pages/About us/ViceChancellor';
 import ProViceChancellor from './pages/About us/ProViceChancellor';
 import FacultyList from './pages/About us/FacultyList';
 import Recognition from './pages/About us/Recognition';
+import CardData from "./components/CardData";
+import AddressAndMap from "./components/AddressAndMap";
+import GetInC from "./components/GetInC";
+import Map from "./components/Map";
 
 
 function App() {
@@ -67,6 +71,7 @@ function App() {
         <Route path="/Post" element={<Post/>} />
         <Route path="/ACET_CLUBS" element={<ACET_CLUBS/>} />
         <Route path="/register" element={<RegistrationForm context="Clubs" />} />
+        <Route path="/contact" element={<Contact />} />
         
 
       </Routes>
