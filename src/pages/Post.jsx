@@ -115,13 +115,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 //componnet function
 const JobPostPage = () => {
-  //state management function
-  const [isAddJobOpen, setAddJobOpen] = useState(false);
-
-  const toggleAddJobDropdown = () => {
-    setAddJobOpen(!isAddJobOpen);
-  };
-
+ 
   const JobCard = ({ job }) => {
     const applyLink = job.applyLink;//job object
  //component renders a job card
