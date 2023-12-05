@@ -2,6 +2,7 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -33,9 +34,27 @@ export default function BasicMenu() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/ProViceChancellor">Pro Vice Chancellor</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/ViceChancellor">Vice Chancellor</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/UniversityManagement">Management</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/FacultyList">Faculty List</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/MinutesOfMeeting">Minute of Meeting</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/AnualReport">Anual Report</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/Recognition">Recogination, regulation and quality</Link>
+        </MenuItem>
       </Menu>
     </div>
   );
