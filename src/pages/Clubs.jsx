@@ -42,7 +42,8 @@ function Clubs() {
           "Joining a college club is like unlocking a secret level—except instead of battling monsters, you conquer new friendships and navigate the maze of exciting events. It's the ultimate cheat code for a memorable college experience!"
         </p>
       </div>
-      
+      <p  className="lg:text-3xl md:text-2xl text-3xl text-center lg:mt-10 mt-6">Clubs Memories</p>
+
       <NoticeBoard images={ClubsData} />
     
       {!showRegistrationForm || isSubmitted ? (

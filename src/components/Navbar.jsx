@@ -9,7 +9,11 @@ export default function Navbar() {
     { name: "ABOUT", link: "/about" },
     { name: "ACET", link: "/acet" },
     { name: "STUDENT ZONE", link: "/students" },
+<<<<<<< HEAD
     { name: "INTERNSHIP", link: "/Internship" },
+=======
+    { name: "JOB POSTINGS", link: "/faculty" },
+>>>>>>> 9d7133ca37df25183edac2f06d71e2230686511b
     { name: "CONTACT US", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
