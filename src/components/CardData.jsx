@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CardData(props ){
+function CardData(props) {
   return (
     <div className="shadow-[#294d61] shadow-inner p-4 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105 h-[400px] mt-16">
       <div className="mb-4">
@@ -13,7 +13,10 @@ function CardData(props ){
           <h1 className="text-2xl font-bold mb-1 mt-8">{props.name}</h1>
           <div className="mb-2 mt-4 text-left">
             <div className="mb-1 mt-12">
-              <strong>Email:</strong> {props.email}
+              <strong>Email:</strong>{' '}
+              <a href={`mailto:${props.email}`} className="text-blue-500">
+                {props.email}
+              </a>
             </div>
             <div className="mb-1">
               <strong>Phone:</strong> {props.contact}
@@ -23,6 +26,6 @@ function CardData(props ){
       </div>
     </div>
   );
-};
+}
 
 export default CardData;

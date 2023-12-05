@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Student from "./pages/Student";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Faculty from "./pages/Faculty";
+import Internship from "./pages/Internship";
 import NCC from './pages/NCC';
 import NSS from './pages/NSS';
 import Clubs from './pages/Clubs';
@@ -32,10 +32,7 @@ import ViceChancellor from './pages/About us/ViceChancellor';
 import ProViceChancellor from './pages/About us/ProViceChancellor';
 import FacultyList from './pages/About us/FacultyList';
 import Recognition from './pages/About us/Recognition';
-import CardData from "./components/CardData";
-import AddressAndMap from "./components/AddressAndMap";
-import GetInC from "./components/GetInC";
-import Map from "./components/Map";
+
 
 
 function App() {
@@ -54,7 +51,7 @@ function App() {
         <Route path="/Recognition" element={<Recognition />} />
         <Route path="/acet" element={<Acet />} />
         <Route path="/students" element={<Student />} />
-        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/internship" element={<Internship/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/NCC" element={<NCC />} />
         <Route path="/NSS" element={<NSS />} />

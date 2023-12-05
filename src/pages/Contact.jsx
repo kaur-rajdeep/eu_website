@@ -3,7 +3,7 @@ import Carousel from "../components/Carousel";
 import CardData from "../components/CardData";
 import AddressAndMap from "../components/AddressAndMap";
 import GetInC from "../components/GetInC";
-import Map from "../components/Map";
+
 import AccountCard from '../components/AccountCard';
 
 const images = [

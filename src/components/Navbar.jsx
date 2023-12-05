@@ -84,7 +84,7 @@ export default function Navbar() {
     { name: "ABOUT", onClick: handleAboutClick },
     { name: "ACET", link: "/acet" },
     { name: "STUDENT ZONE", link: "/students" },
-    { name: "FACULTY ZONE", link: "/faculty" },
+    { name: "INTERNSHIP", link: "/Internship" },
     { name: "CONTACT US", link: "/contact" },
   ];
 
