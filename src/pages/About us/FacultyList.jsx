@@ -46,20 +46,19 @@ const menuItems = [
 
 function FacultyList() {
   return (
-    <div >
+    <div>
+      <Carousel images={images} />
+      <p className="text-4xl lg:text-5xl mt-6 mb-6 text-center font-extrabold ">
+        Faculty List
+      </p>
 
-    <Carousel images={images} />
-    <p className="text-4xl mt-6 mb-6 text-center">Faculty List</p>
-
-    <div className="App">
-      {menuItems.map((item, index) => (
-        <ExpandableMenuItem key={index} {...item} />
-      ))}
+      <div className="App">
+        {menuItems.map((item, index) => (
+          <ExpandableMenuItem key={index} {...item} />
+        ))}
+      </div>
     </div>
-
-
-  </div>
-  )
+  );
 }
 
 export default FacultyList

@@ -46,21 +46,19 @@ const menuItems = [
 
 function MinutesOfMeeting() {
   return (
-    <div >
+    <div>
+      <Carousel images={images} />
+      <p className="text-4xl lg:text-5xl mt-6 mb-6 text-center font-extrabold ">
+        Minutes of Meeting
+      </p>
 
-    <Carousel images={images} />
-    <p className="text-4xl mt-6 mb-6 font-bold text-center">Minutes of Meeting</p>
-
-
-    <div className="App">
-      {menuItems.map((item, index) => (
-        <ExpandableMenuItem key={index} {...item} />
-      ))}
+      <div className="App">
+        {menuItems.map((item, index) => (
+          <ExpandableMenuItem key={index} {...item} />
+        ))}
+      </div>
     </div>
-
-
-  </div>
-  )
+  );
 }
 
 export default MinutesOfMeeting

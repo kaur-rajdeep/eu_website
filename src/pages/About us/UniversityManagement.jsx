@@ -47,20 +47,19 @@ const menuItems = [
 
 function UniversityManagement() {
   return (
-    <div >
+    <div>
+      <Carousel images={images} />
 
-    <Carousel images={images} />
-
-    <p className="text-4xl mt-6 mb-6 text-center">University Management</p>
-    <div className="App">
-      {menuItems.map((item, index) => (
-        <ExpandableMenuItem key={index} {...item} />
-      ))}
+      <p className="text-4xl lg:text-5xl mt-6 mb-6 text-center font-extrabold ">
+        University Management
+      </p>
+      <div className="App">
+        {menuItems.map((item, index) => (
+          <ExpandableMenuItem key={index} {...item} />
+        ))}
+      </div>
     </div>
-
-
-  </div>
-  )
+  );
 }
 
 export default UniversityManagement
