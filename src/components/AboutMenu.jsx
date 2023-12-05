@@ -29,7 +29,8 @@ export default function AboutMenuBar() {
           <li
             className="md:h-16 text-center rounded-lg md:text-sm lg:text-lg text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A]  text-white cursor-pointer "
             onClick={toggleAcademicsDropdown}
-            ref={academicsRef}>
+            ref={academicsRef}
+          >
             Message
             {academicsDropdownOpen && (
               <div className="dropdown-content backdrop-blur-md bg-black bg-opacity-40 text-white sm:font-normal lg:text-xl  mt-6 w-[250px] rounded-md border-2">
@@ -54,7 +55,7 @@ export default function AboutMenuBar() {
             <CustomLink to="/MinutesOfMeeting">Minute of Meeting</CustomLink>
           </li>
           <li className="md:h-16 text-center  rounded-lg md:text-sm lg:text-lg text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
-            <CustomLink to="/AnualReport">Anual Report</CustomLink>
+            <CustomLink to="/AnualReport">Annual Report</CustomLink>
           </li>
           <li className="md:h-16 text-center rounded-lg md:texsmxl text-base md:font-bold font-medium p-2 md:p-4  lg:m-2 bg-[#05161A] text-white cursor-pointer ">
             <CustomLink to="/Recognition">

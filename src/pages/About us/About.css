@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+
   }
   
   /* ExpandableMenuItem.css */
@@ -15,6 +16,7 @@
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: #072e33;
+    color: white;
   }
   
   .header {
@@ -32,6 +34,7 @@
   
   .expand-button {
     background-color: white;
+    color:black;
     padding: 5px 20px;
     cursor: pointer black;
     font-size: 20px;

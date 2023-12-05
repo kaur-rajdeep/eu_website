@@ -46,19 +46,18 @@ const menuItems = [
 
 function Recognition() {
   return (
-    <div >
-
-    <Carousel images={images} />
-    <p className="text-4xl mt-6 mb-6">Recogination, regulation and quality</p>
-    <div className="App">
-      {menuItems.map((item, index) => (
-        <ExpandableMenuItem key={index} {...item} />
-      ))}
+    <div>
+      <Carousel images={images} />
+      <p className="text-4xl lg:text-5xl mt-6 mb-6 text-center font-extrabold ">
+        Recogination, Regulation and Quality
+      </p>
+      <div className="App">
+        {menuItems.map((item, index) => (
+          <ExpandableMenuItem key={index} {...item} />
+        ))}
+      </div>
     </div>
-
-
-  </div>
-  )
+  );
 }
 
 export default Recognition
