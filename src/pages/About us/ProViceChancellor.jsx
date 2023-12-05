@@ -24,7 +24,7 @@ function ProViceChancellor() {
           alt="viceChancellor image"
           className="max-w-1/2 md:max-w-full mx-auto"
         />
-        <div className="text-left">
+        <div className="lg:text-left ">
           <p className="text-5xl font-bold">Dr. Amrik Singh Ahluwalia</p>
           <p className="text-4xl mt-6 font-bold text-slate-400">
             {" "}
