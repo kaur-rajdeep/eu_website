@@ -32,9 +32,16 @@ const FacultyCard = () => {
     {
       name: "Er. SUMON DEY",
       imageSrc:
-        "https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg",
+        "https://media.istockphoto.com/photos/portrait-of-confident-caucasian-male-teacher-in-classroom-picture-id515264678?k=6&m=515264678&s=170667a&w=0&h=1Y3zqhc30COWabbJlCZRsV01-TAr7lICACaonjnvc_k=",
       description:
         "He has joined us an Assistant Professor in CSE department. A passionate, optimistic, self-motivated, and inspired teaching profession with 4+ years of experience teaching.",
+    },
+    {
+      name: "Er. RAJEEV THAKUR",
+      imageSrc:
+        "https://insidesources.com/wp-content/uploads/2020/03/bigstock-Portrait-Of-A-Young-Male-Teach-324671239-e1584700649236.jpg",
+      description:
+        "A passionate, optimistic, self-motivated, and inspired teaching profession with several years of experience teaching.",
     },
   ];
 
