@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "ABOUT", link: "/about" },
     { name: "ACET", link: "/acet" },
     { name: "STUDENT ZONE", link: "/students" },
-    { name: "FACULTY ZONE", link: "/faculty" },
+    { name: "JOB POSTINGS", link: "/faculty" },
     { name: "CONTACT US", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
