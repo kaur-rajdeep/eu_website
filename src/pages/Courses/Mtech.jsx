@@ -24,7 +24,7 @@ function Mtech(){
 
         {/*------------------------------------------ COURSE OVERVIEW------------------------------------- */}
         <div className="text-white bg-[#072e33] grid justify-center ">
-        <p className="lg:text-4xl md:text-2xl text-xl text-center lg:mt-10 font-extrabold">
+        <p className="lg:text-4xl md:text-2xl text-xl text-center lg:mt-10 m-4 font-extrabold">
           COURSE OVERVIEW
           
         </p>
@@ -36,8 +36,8 @@ function Mtech(){
         equipping the graduates, with advanced conceptual knowledge, technical skills and ability to pursue research
         in the field of Computer Science and Engineering, appropriate to the present scenario.</p>
         </div>
-        <div className="grid lg:grid-cols-3 h-40">
-        <div className="border-2-black border shadow-md m-4 ml-20 hover:scale-110">
+        <div className="grid lg:grid-cols-3 ">
+        <div className="border-2-black border shadow-md m-4 lg:ml-20 hover:scale-110">
           <div className="p-4 bg-[#0F969C] text-center">
           <p className="text-white text-2xl">DURATION</p>
           </div>
@@ -60,7 +60,7 @@ function Mtech(){
         </div>
 {/*------------------------------------------- ELIGIBILITY CARD----------------------------------------------- */}
 <div className="grid place-items-center">
-        <div className="border-2-black border shadow-md m-4 ml-20 hover:scale-110 lg:w-1/2 ">
+        <div className="border-2-black border shadow-md m-4 lg:ml-20 hover:scale-110 lg:w-1/2 ">
           <div className="p-4 bg-[#0F969C] text-center">
           <p className="text-white text-2xl">ELIGIBILITY</p>
           </div>
