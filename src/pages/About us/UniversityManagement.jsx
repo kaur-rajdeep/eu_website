@@ -51,7 +51,7 @@ function UniversityManagement() {
 
     <Carousel images={images} />
 
-    <p className="text-4xl mt-6 mb-6">University Management</p>
+    <p className="text-4xl mt-6 mb-6 text-center">University Management</p>
     <div className="App">
       {menuItems.map((item, index) => (
         <ExpandableMenuItem key={index} {...item} />

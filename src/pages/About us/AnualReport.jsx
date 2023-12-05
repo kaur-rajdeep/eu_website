@@ -49,7 +49,7 @@ function AnualReports() {
     <div >
 
     <Carousel images={images} />
-    <p className="text-4xl mt-6 mb-6">Anual Report</p>
+    <p className="text-4xl mt-6 mb-6 text-center">Anual Report</p>
 
     <div className="App">
       {menuItems.map((item, index) => (

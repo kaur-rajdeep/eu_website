@@ -49,7 +49,7 @@ function FacultyList() {
     <div >
 
     <Carousel images={images} />
-    <p className="text-4xl mt-6 mb-6">Faculty List</p>
+    <p className="text-4xl mt-6 mb-6 text-center">Faculty List</p>
 
     <div className="App">
       {menuItems.map((item, index) => (

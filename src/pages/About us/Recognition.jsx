@@ -49,7 +49,7 @@ function Recognition() {
     <div >
 
     <Carousel images={images} />
-    <p className="text-4xl mt-6 mb-6">Recogination, regulation and quality</p>
+    <p className="text-4xl mt-6 mb-6 text-center">Recogination, regulation and quality</p>
     <div className="App">
       {menuItems.map((item, index) => (
         <ExpandableMenuItem key={index} {...item} />
