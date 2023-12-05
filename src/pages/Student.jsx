@@ -37,8 +37,13 @@ const Student = () => {
           potential, fostering knowledge, and inspiring meaningful change."
         </p>
       </div>
-
+      <div>
+        <p  className="lg:text-3xl md:text-2xl text-3xl text-center lg:mt-10 mt-6">Memories</p>
       <NoticeBoard images={StudentZoneData} />
+
+      </div>
+
+      
     </div>
   );
 };
