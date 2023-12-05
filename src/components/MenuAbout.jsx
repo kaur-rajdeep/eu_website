@@ -1,8 +1,8 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -16,15 +16,16 @@ export default function BasicMenu() {
 
   return (
     <div>
-      <Button
+      <button
+        className="text-xl text-white"
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        About us
-      </Button>
+        ABOUT
+      </button>
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
@@ -33,28 +34,37 @@ export default function BasicMenu() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
+        PaperProps={{
+          style: {
+            backgroundColor: "#05161A",
+            marginTop: "4px",
+            height: "264px", // Override background color
+          },
+        }}
       >
-        <MenuItem onClick={handleClose}>
-          <Link to="/ProViceChancellor">Pro Vice Chancellor</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/ViceChancellor">Vice Chancellor</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/UniversityManagement">Management</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/FacultyList">Faculty List</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/MinutesOfMeeting">Minute of Meeting</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/AnualReport">Anual Report</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/Recognition">Recogination, regulation and quality</Link>
-        </MenuItem>
+        <div className="border-[2px] rounded-md text-white bg-[#05161A] font-[Poppins] drop-shadow-lg">
+          <MenuItem onClick={handleClose}>
+            <Link to="/ProViceChancellor">Pro Vice Chancellor</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link to="/ViceChancellor">Vice Chancellor</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link to="/UniversityManagement">Management</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link to="/FacultyList">Faculty List</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link to="/MinutesOfMeeting">Minute of Meeting</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link to="/AnualReport">Anual Report</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link to="/Recognition">Recogination, regulation and quality</Link>
+          </MenuItem>
+        </div>
       </Menu>
     </div>
   );

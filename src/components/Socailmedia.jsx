@@ -7,7 +7,7 @@ import QuizIcon from "@mui/icons-material/Quiz";
 const Socailmedia = () => {
   return (
     <>
-      <div className="backdrop-blur-lg fixed top-[250px] z-10 sticky-navbar rounded-lg">
+      <div className="backdrop-blur-lg fixed top-[250px] z-10 sticky-navbar rounded-lg hidden md:block">
         <div className="rounded-full">
           <a
             href="https://www.facebook.com/eternaluni/"
