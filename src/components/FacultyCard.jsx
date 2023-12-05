@@ -11,7 +11,7 @@ const FacultyCard = () => {
     {
       name: "Er. PRAVEEN RAJPUT",
       imageSrc:
-        "https://everydaypower.com/wp-content/uploads/2015/10/Become-A-More-Positive-Person-With-These-10-Actions.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/street-portrait-of-a-young-man-using-mobile-phone-royalty-free-image-1018047498-1564431457.jpg?crop=0.668xw:1.00xh;0.226xw,0&resize=640:*",
       description:
         "He has a diverse mix of industry experience as a team leader at Airtel and an educator. He has joined as Assistant professor in CSE department",
     },
