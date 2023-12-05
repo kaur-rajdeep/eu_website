@@ -2,7 +2,7 @@ import React from 'react';
 
 const Map = () => {
   return (
-    <div className="map-container" style={{ marginLeft: '30px', marginTop: '-20px' }}>
+    <div  style={{ marginLeft: '30px', marginTop: '-20px' }}>
       <br />
       <br />
       {/* Your Google Maps iframe goes here */}

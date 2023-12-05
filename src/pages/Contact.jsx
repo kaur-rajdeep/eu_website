@@ -37,7 +37,7 @@ const ContactsCardData = [
     image: "https://media.istockphoto.com/id/481376567/photo/hispanic-man.jpg?s=612x612&w=0&k=20&c=O3ZX0_9VXY3EFuJxdZepUiWU0yQWowEtxv5QUAXAa60=",
   },
 ];
-
+//Data Declarations
 const AccountsCardData=[
   {
     text: "For Admission",
@@ -52,7 +52,7 @@ const AccountsCardData=[
     name: "Accounts",
   }
 ]
-
+//Functional components
 const Contact = () => {
   return (
     <div>

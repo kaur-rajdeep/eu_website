@@ -18,7 +18,7 @@ function Faculty() {
     <div className="mt-16">
 
 <Carousel images={images} />
-      {/* COURSES */}
+      {/* Cards */}
       <div className="grid justify-center mb-16">
         <p className="brown lg:text-5xl md:text-3xl text-2xl text-center text-white lg:mt-12 mt-16 font-extrabold mb-6">
           Jobs And Internships
